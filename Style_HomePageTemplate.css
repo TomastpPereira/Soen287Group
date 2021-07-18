@@ -116,6 +116,24 @@ body{
     box-sizing: border-box;
     font-size: 50px;
 }
+
+
+/* Styling for Contents of Forms */
+.form-container {
+    width: 500px;
+    clear: both;
+  }
+  .form-container input[type=text] {
+    width: 100%;
+    clear: both;
+  }
+  .form-container input[type=submit]{
+      width:75px;
+  }
+
+
+
+/* Styling when Different Sized Screen */  
 @media screen and (max-width:1200px) {
     .aisle-content{
         width: 40%;
@@ -125,26 +143,4 @@ body{
     .aisle-content{
         width: 90%;
     }
-}
-
-#left-box {
-    float:left; 
-    background:Red;
-    width:33%;
-    height:280px;
-    border: 8px solid #332;
-}
-#mid-box{
-    float:left; 
-    background:Green;
-    width:34%;
-    height:280px;
-    border: 8px solid #332;
-}
-#right-box{
-    float:right;
-    background:blue;
-    width:33%;
-    height:280px;
-    border: 8px solid #332;
 }
