@@ -1,4 +1,3 @@
-
 body{
     margin: 0;
     padding-bottom: 200px;
@@ -80,7 +79,7 @@ body{
     font-size: 20px;
 }
 
-
+/* Footer Styling */
 .footer {
     background-color: #333;
     overflow: hidden;
@@ -92,8 +91,7 @@ body{
     margin-top: auto;
 }
 
-
-/* Styling for the aisle Cereal by Tomas */
+/* P2: Styling for the aisle Cereal by Tomas */
 .aisle-box {
     background: #332;
     padding-bottom: 15px;
@@ -131,6 +129,13 @@ body{
       width:75px;
   }
 
+
+
+/* Item Page Styling */
+
+/* Login and SignUp Styling */
+
+/* Shopping Cart Styling */
 
 
 /* Styling when Different Sized Screen */  
