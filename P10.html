@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Edit User Profile</title>
+</head>
+<body>
+	<h1><strong>Edit Profile</strong></h1>
+	<br>
+	<div class="container">
+		<h2>Delivery Information</h2>
+		<div>
+			<label>Name</label>
+			<input type="Name" placeholder= "John" name="first-name" required>
+			<label>Last name</label>
+			<input type="Name" placeholder= "Doe" name="last-name" required>
+		</div>
+		<div>
+			<label>Address</label>
+			<input type="Address1" placeholder= "123 Main St" name="address1" required>
+			<br>
+			<input type="Address2" name="address2">
+		</div>
+		<div>
+			<label>City</label>
+			<input type="City" name="City" required>
+			<label for="Province">Province</label>
+			<select name="Province" id="Province" required>
+				<option value="Blank"></option> 		<!-- Find a way to disable this option -->
+				<option value="Alberta">Alberta</option>
+			    <option value="British-Columbia">British Columbia</option>
+			    <option value="Manitoba">Manitoba</option>
+			    <option value="New-Brunswick">New Brunswick</option>
+			    <option value="Newfoundland-and-Labrador">Newfoundland and Labrador</option>
+				<option value="Northwest-Territories">Northwest Territories</option>
+			    <option value="Nova-Scotia">Nova Scotia</option>
+			    <option value="Nunavut">Nunavut</option>
+			    <option value="Ontario">Ontario</option>
+			    <option value="Prince-Edward-Island">Prince Edward Island</option>
+			    <option value="Quebec">Quebec</option>
+			    <option value="Saskatchewan">Saskatchewan</option>
+			    <option value="Yukon">Yukon</option>
+		  	</select>
+			<label>Postal Code</label>
+			<input type="Postal-code" placeholder= "H1H 1H1" name="postal-code" required>
+		</div>
+	</div>
+	<div class="container">
+		<h2>Account Information</h2>
+		<div>
+			<div>
+				<label>Name</label>
+				<input type="Name" placeholder= "John" name="first-name" required>
+				<label>Last name</label>
+				<input type="Name" placeholder= "Doe" name="last-name" required>
+  			</div>
+  			<div>
+  				<label>Phone Number</label>
+				<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  			</div>
+  			<div>
+  				<input type="radio" name="gender" value="male"> Male
+				<input type="radio" name="gender" value="female"> Female
+				<input type="radio" name="gender" value="other"> Other
+  			</div>
+			<div>
+				<label for="Language">Preferred Language</label>
+				<select name="Language" id="Language" required>
+					<option value="English">English</option>
+					<option value="French">French</option>
+			  	</select>
+		  	</div>
+		</div>
+	</div>
+	<br>
+	<button type="Save" value="Save">Save</button>
+</body>
+</html>
