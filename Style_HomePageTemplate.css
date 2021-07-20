@@ -2,15 +2,15 @@ body{
     margin: 0;
     padding-bottom: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #FFFFFF;
     display: grid;
-    background-color: #332;
+    background-color: #817F82;
 }
 
 /* Styling for the navbar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:#434255;
 }
 .navbar a {
     float: left;
@@ -25,7 +25,7 @@ body{
     color: rgb(77, 77, 77);
 }
 .navbar a.active {
-    background-color: #1c5bcf;
+    background-color: #356FDA;
     color: white;
 }
 .dropdown {
@@ -36,7 +36,7 @@ body{
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #E7E4DF;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -68,9 +68,9 @@ body{
 /* Styling for the banner below navbar */
 #banner {
     text-align: center;
-    border: 3px solid #333;
-    color: white;
-    background-color: #333;
+    border: 3px solid #817F82;
+    color: #FFFFFF;
+    background-color: #817F82;
 }
 #banner h1{
     font-size: 60px;
@@ -81,9 +81,9 @@ body{
 
 /* Footer Styling */
 .footer {
-    background-color: #333;
+    background-color: #434255;
     overflow: hidden;
-    color: white;
+    color: #FFFFFF;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -93,7 +93,7 @@ body{
 
 /* P2: Styling for the aisle Cereal by Tomas */
 .aisle-box {
-    background: #332;
+    background: #817F82;
     padding-bottom: 15px;
     padding-top: 35px;
     border-right: 25px;
@@ -106,13 +106,30 @@ body{
     justify-content: space-around;
     flex-flow: wrap;
 }
-.aisle-content{
+.aisle-content {
     width: 40%;
-    height: 400px;
+    height: 700px;
     background: rgb(173, 173, 173);
-    margin-bottom: 20px;
     box-sizing: border-box;
     font-size: 50px;
+}
+.aisle-content h2 {
+    margin: 2%;
+    text-align: center;
+}
+.aisle-content p {
+    text-align: center;
+}
+.aisle-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aisle-content-footer {
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+    bottom: 0;
 }
 
 
