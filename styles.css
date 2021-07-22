@@ -2,9 +2,10 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Styling for the navbar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color:#434255;
 }
 .navbar a {
   float: left;
@@ -14,24 +15,23 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-.navbar a:hover,
-.dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #ddd;
   color: rgb(77, 77, 77);
 }
 .navbar a.active {
-  background-color: #1c5bcf;
+  background-color: #356FDA;
   color: white;
 }
 .dropdown {
   float: left;
   overflow: hidden;
 }
-.dropdown .dropbtn {
+.dropdown .dropbtn{
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #E7E4DF;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -42,7 +42,7 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .dropdown-content a {
@@ -53,20 +53,18 @@ body {
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 #banner {
   text-align: center;
-  border: 3px solid #333;
-  color: white;
-  background-color: #333;
+  border: 3px solid white;
+  color: black;
+  background-color: white;
 }
 #banner h1 {
   font-size: 60px;
@@ -75,14 +73,14 @@ body {
   font-size: 20px;
 }
 .footer {
-  background-color: #333;
+  background-color: #434255;
   overflow: hidden;
-  border-top: 1px #333;
-  color: white;
+  color: #FFFFFF;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 /* P4 styles */

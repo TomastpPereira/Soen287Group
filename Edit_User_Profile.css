@@ -105,7 +105,7 @@ select{
 /* Styling for the navbar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:#434255;
 }
 .navbar a {
     float: left;
@@ -120,7 +120,7 @@ select{
     color: rgb(77, 77, 77);
 }
 .navbar a.active {
-    background-color: #1c5bcf;
+    background-color: #356FDA;
     color: white;
 }
 .dropdown {
@@ -131,7 +131,7 @@ select{
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #E7E4DF;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -162,9 +162,9 @@ select{
 
 /* Footer Styling */
 .footer {
-    background-color: #333;
+    background-color: #434255;
     overflow: hidden;
-    color: white;
+    color: #FFFFFF;
     position: fixed;
     left: 0;
     bottom: 0;

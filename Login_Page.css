@@ -1,6 +1,6 @@
 html, body { height: 100%; width: 100%; margin: 0; font-family: arial, sans-serif; }
 body{
-	background-image: url('sign-in.jpg');
+	background-image: url('./sign-in.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -43,7 +43,7 @@ input[type=email], input[type=password]{
 /* Styling for the navbar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:#434255;
 }
 .navbar a {
     float: left;
@@ -58,7 +58,7 @@ input[type=email], input[type=password]{
     color: rgb(77, 77, 77);
 }
 .navbar a.active {
-    background-color: #1c5bcf;
+    background-color: #356FDA;
     color: white;
 }
 .dropdown {
@@ -69,7 +69,7 @@ input[type=email], input[type=password]{
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #E7E4DF;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -100,9 +100,9 @@ input[type=email], input[type=password]{
 
 /* Footer Styling */
 .footer {
-    background-color: #333;
+    background-color: #434255;
     overflow: hidden;
-    color: white;
+    color: #FFFFFF;
     position: fixed;
     left: 0;
     bottom: 0;
