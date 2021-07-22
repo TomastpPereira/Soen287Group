@@ -138,7 +138,6 @@ body{
 .aisle-content-footer {
     width: 100%;
     height: auto;
-    border: 1px solid green;
     bottom: 0;
 }
 
@@ -163,6 +162,33 @@ body{
 
 /* Shopping Cart Styling */
 
+
+/* Styling for Quantity Selector */
+.counter {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+}
+.counter input {
+    width: 50px;
+    border: 0;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #0052cc;
+    color: #fff;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #0052cc;
+    user-select: none;
+}
 
 /* Styling when Different Sized Screen */  
 @media screen and (max-width:1200px) {

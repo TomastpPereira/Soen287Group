@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>User Login Page </title>
-	<link rel = "stylesheet type" type = "text/css" href= "Login_Page.css" >
+  <title> Apple </title>
+  <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >
 </head>
+
 <body>
-	<!-- nav bar -->
 <div class="navbar">
-  <a class="active" href="P1_HomePage.html">Home</a>
+  <a class="active" href="index.html">Home</a>
   <div class="dropdown">
     <button class="dropbtn">
       Aisles
@@ -22,31 +22,34 @@
   <a href="#"> Login </a>
   <a href="#"> Sign Up</a>
 </div>
-<!-- main item -->
-	<div class="login-box">
-		<h1 id="intro">Welcome Back</h1>
-		<p>Please sign in to enjoy your member benefits</p>
-			<form action="/action_page.php" autocomplete="on" method="POST"> <!-- link to form page -->
-				<div>
-					<label></label>
-					<input type="email" class="test" placeholder= "Email Address" name="first-name" required>
-					<br style="line-height: 50px;">
-					<label></label>
-					<input type="password" placeholder= "Password" name="password" required>
-				</div>
-				<div>
-					<br>
-				    <button type="submit" class="sign-in-button">Sign in</button>
-				</div>
-				<br>
-			     <label></label>
-		      		<input type="checkbox" checked="checked" name="remember"> Remember me
-			    <p><a href= "#"> Forgot Password? </a></p>  <!-- replace # with forgot password page -->
-			    <br style="line-height: 20px;">
-			    <p> New to Tomas' and friends? <a href= "#">Sign up now</a></p>  <!-- replace # with sign up page -->
-			</form>
-	</div>
-<!-- footer -->
+
+<div class="container" id="banner">
+  <h1> Fruits & Vegetables </h1>
+  <h4> Aisle 1 </h4>
+</div>
+
+<div style="padding-left: 24px; padding-right: 24px;">
+  <p style="text-align: center;"> Apple </p>
+  <img src="https://images.pexels.com/photos/6157055/pexels-photo-6157055.jpeg?cs=srgb&dl=pexels-laker-6157055.jpg&fm=jpg" width = "30%" alt = "Apple picture"/>
+  <p>
+    This apple is delicious ! Check out this cool information.
+  </p>
+  <table>
+    <tr>
+      <td> Weight: </td>
+      <td> 100g </td>
+    </tr>
+    <tr>
+      <td> Price: </td>
+      <td> 0.65$/kg </td>
+    </tr>
+    <tr>
+      <td> Calories: </td>
+      <td> 150 Cal </td>
+    </tr>
+  </table>
+</div>
+
 <div class="footer">
   <p style="text-align: center;"> Footer Content </p>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id felis sed nisl ultrices mollis. Phasellus nec
