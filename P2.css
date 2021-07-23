@@ -2,18 +2,15 @@ body{
     margin: 0;
     padding-bottom: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    color:black;
+    color: #FFFFFF;
     display: grid;
-    background-color: white; 
+    background-color: white;
 }
-
 
 /* Styling for the navbar */
 .navbar {
-    text-shadow: none;
     overflow: hidden;
     background-color:#434255;
-    font-weight: normal;
 }
 .navbar a {
     float: left;
@@ -70,11 +67,10 @@ body{
 
 /* Styling for the banner below navbar */
 #banner {
-    text-shadow: none;
     text-align: center;
-    border: 3px solid #434255;
-    color: #f2f2f2;
-    background-color: #434255;
+    border: 3px solid white;
+    color: black;
+    background-color: white;
 }
 #banner h1{
     font-size: 60px;
@@ -85,7 +81,6 @@ body{
 
 /* Footer Styling */
 .footer {
-    text-shadow: none;
     background-color: #434255;
     overflow: hidden;
     color: #FFFFFF;
@@ -94,25 +89,16 @@ body{
     bottom: 0;
     width: 100%;
     margin-top: auto;
-    font-weight: normal;
 }
 
-/* Styling to Center an image on the screen */
-.center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* P2: Styling for the aisle Cereal by Tomas */
+/* P2: Styling for the meat & poultry aisle by Arie */
 .aisle-box {
     background: white;
     padding-bottom: 15px;
     padding-top: 35px;
-    border-right: 25px;
     height: auto;
     width: 100%; 
-
+    border-right: 25px;
     /* Flexbox Styling */
     display: flex;
     flex-direction: row;
@@ -121,85 +107,25 @@ body{
 }
 .aisle-content {
     width: 40%;
-    height: 700px;
-    background: rgb(173, 173, 173);
-    box-sizing: border-box;
-    font-size: 40px;
-    border-radius: 50px;
-    box-shadow: 0px 3px 8px 3px rgb(190, 190, 190);
-    position: relative;
-}
-.aisle-content h2, h3 {
-    margin: 2%;
-    text-align: center;
-}
-.aisle-content a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.aisle-content a:visited {
-    color: #FFFFFF;
-}
-.aisle-content p {
-    text-align: center;
-}
-.aisle-content img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width:  60%;
-    height: 70%;
-    background-size: cover;
-}
-.aisle-content-footer {
-    width: 100%;
     height: auto;
-    bottom: 0;
-    position: absolute
-}
-
-/* Styling for Contents of Forms */
-.form-container {
-    width: 500px;
-    clear: both;
-  }
-  .form-container input[type=text] {
-    width: 100%;
-    clear: both;
-  }
-  .form-container input[type=submit]{
-      width:75px;
-  }
-
-
-/* Styling for Quantity Selector */
-.counter {
-    width: 150px;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-}
-.counter input {
-    width: 50px;
-    border: 0;
-    line-height: 30px;
-    font-size: 20px;
+    font-size: 10pt;
     text-align: center;
-    background: #0052cc;
-    color: #fff;
-    appearance: none;
-    outline: 0;
+    border-radius: 50px;
+    color: black;
+    box-shadow: 0 0 10px grey;
 }
-.counter span {
-    display: block;
-    font-size: 25px;
-    padding: 0 10px;
-    cursor: pointer;
-    color: #0052cc;
-    user-select: none;
+a {
+    text-decoration: none;
+    color: black;
 }
-
+h3{
+    font-size: 16pt;
+}
+img {
+    max-width: 100%;
+    max-height: 85%;
+    border-radius: 50px;
+}
 /* Styling when Different Sized Screen */  
 @media screen and (max-width:1200px) {
     .aisle-content{
