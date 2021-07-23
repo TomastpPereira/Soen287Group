@@ -2,11 +2,15 @@ body{
     margin: 0;
     padding-bottom: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    color:black;
+    font-weight: bold;
+    text-shadow: 2px 2px #181717;
+    color:#f2f2f2;
     display: grid;
     background-color: white; 
+    background-size:cover;
+	background-attachment: fixed;
+    background-position: center center;
 }
-
 
 /* Styling for the navbar */
 .navbar {
@@ -134,11 +138,11 @@ body{
     text-align: center;
 }
 .aisle-content a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
 }
 .aisle-content a:visited {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .aisle-content p {
     text-align: center;
