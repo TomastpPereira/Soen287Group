@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Edit User Profile</title>
+	<link rel = "stylesheet type" type = "text/css" href= "Edit_User_Profile_New.css" >
+</head>
+<body>
+	<!-- nav bar -->
+	<div class="navbar">
+		<a class="active" href="index.html">Home</a>
+		<a href="P7_list_of_products.html"> Product List </a>
+		<a href="P8_Edit_A_Product.html"> Edit Product </a>
+		<a href="P9_Edit_User_List.html"> User List </a>
+		<a href="P10_Edit_User.html"> Edit User </a>
+		<a href="P11_Edit_Order_List.html"> Order List </a>
+		<a href="#"> Edit Order </a>
+	</div>
+<!-- main item -->
+	<h1><strong>Edit Profile</strong></h1>
+	<div class="edit-profile-box">
+		<form action="/action_page.php" method="POST"> <!-- link to save page -->	
+			<br>
+			<h2>Delivery Information</h2>
+			<div class="flexbox-container-main">
+				<div class="flexbox-container-name">
+					<div class="flexbox fname">
+						<label>Name</label>
+						<input type="name" placeholder= "John" name="first-name" required>
+					</div>
+					<div class="flexbox lname">
+						<label>Last name</label>
+						<input type="name" placeholder= "Doe" name="last-name" required>
+					</div>	
+				</div>
+				<div class="flexbox-container-address1">
+					<div class="flexbox address">
+						<label>Address</label>
+						</div>
+						<input type="address" placeholder= "123 Main St" name="address" required>
+				</div>
+				<div class="flexbox-container-address2">
+					<div class="flexbox city">
+						<label>City</label>
+						<input type="City" name="City" required>
+					</div>
+					<div class="province">
+						<label for="Province">Province</label>
+						<select name="Province" id="Province" required>
+							<option value="Blank"></option> 		<!-- Find a way to disable this option -->
+							<option value="Alberta">Alberta</option>
+						    <option value="British-Columbia">British Columbia</option>
+						    <option value="Manitoba">Manitoba</option>
+						    <option value="New-Brunswick">New Brunswick</option>
+						    <option value="Newfoundland-and-Labrador">Newfoundland and Labrador</option>
+							<option value="Northwest-Territories">Northwest Territories</option>
+						    <option value="Nova-Scotia">Nova Scotia</option>
+						    <option value="Nunavut">Nunavut</option>
+						    <option value="Ontario">Ontario</option>
+						    <option value="Prince-Edward-Island">Prince Edward Island</option>
+						    <option value="Quebec">Quebec</option>
+						    <option value="Saskatchewan">Saskatchewan</option>
+						    <option value="Yukon">Yukon</option>
+					  	</select>
+					  </div>
+					  <div class="postal-code">
+						<label>Postal Code</label>
+						<input type="Postal-code" placeholder= "H1H 1H1" name="postal-code" required>
+					</div>
+				</div>
+			</div> <!-- delivery-info-box -->
+			<h2>Account Information</h2>
+				<div class="flexbox-container-main">
+					<div class="flexbox-container-name">
+						<div class="flexbox fname">
+							<label>Name</label>
+							<input type="name" placeholder= "John" name="first-name" required>
+						</div>
+						<div class="flexbox lname">
+							<label>Last name</label>
+							<input type="name" placeholder= "Doe" name="last-name" required>
+						</div>	
+					</div>
+		  			<div class="flexbox-container-name">
+		  				<div class="phone">
+			  				<label>Phone Number</label>
+							<input type="tel" placeholder="(123) 456-7890" name="phone" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" required>
+						</div>
+						<div class="birthday">
+							<label>Birthday</label>
+			  				<input type="date" name="birthday" required="">
+			  			</div>
+		  			</div>
+		  			<div class="radio-button">
+		  				<input type="radio" name="gender" value="male"> Male
+						<input type="radio" name="gender" value="female"> Female
+						<input type="radio" name="gender" value="other"> Other
+		  			</div>
+					<div class="language">
+						<label for="language">Preferred Language</label>
+						<select name="language" id="Language" required>
+							<option value="English">English</option>
+							<option value="French">French</option>
+					  	</select>
+				  	</div>
+				</div>
+			<br>
+			<button type="Save" class="save-button" value="Save">Save</button>
+		</div>
+	</form>
+	<!-- footer -->
+	<div class="footer">
+		<p style="text-align: center;"> Our Info </p>
+		<p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers. </p>
+		<p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
+	</div>
+</body>
+</html>
