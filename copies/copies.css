@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: rgb(77, 77, 77);
+}
+.navbar a.active {
+  background-color: #1c5bcf;
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#banner {
+  text-align: center;
+  border: 3px solid #333;
+  color: white;
+  background-color: #333;
+}
+#banner h1 {
+  font-size: 60px;
+}
+#banner h4 {
+  font-size: 20px;
+}
+.footer {
+  background-color: #333;
+  overflow: hidden;
+  border-top: 1px #333;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* p2 copy styling */
+
+.first-text {
+  text-align: center;
+  text-shadow: 0px 0px 2px rgb(97, 97, 97);
+}
+
+.fruits-img {
+  margin-left: 20%;
+  width: 60%;
+  height: 350px;
+  border-radius: 50px;
+  box-shadow: 0px 3px 10px #a83d13c7;
+}
+
+.outter-fruits {
+  margin-top: 5%;
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.div-fruits {
+  width: 30%;
+  height: 200px;
+  float: left;
+  margin-left: 15%;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 8px 3px #dddddd;
+  transition-duration: 0.5s;
+  /* cursor: pointer; */
+}
+
+.div-fruits2 {
+  width: 30%;
+  height: 200px;
+  float: right;
+  margin-right: 15%;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 8px 3px #dddddd;
+  transition-duration: 0.5s;
+  /* cursor: pointer; */
+}
+
+.images-aisles {
+  margin-top: 15%;
+  margin-left: 10%;
+  background-image: url(/copies/P3.html);
+  cursor: pointer;
+}
+
+.div-fruits:hover {
+  background-color: rgb(228, 228, 228);
+  color: black;
+}
+
+.div-fruits2:hover {
+  background-color: rgb(228, 228, 228);
+  color: black;
+}
+
+.images-text {
+  float: right;
+  margin-right: 10%;
+  /* border: 1px solid black; */
+}
+
+.text-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text-subhead {
+  text-align: center;
+}
+
+@media only screen and (max-width: 896px) {
+  .outter-fruits {
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+  }
+  .div-fruits {
+    width: 80%;
+    float: none;
+    margin-bottom: 15px;
+    margin-left: 10%;
+  }
+
+  .div-fruits2 {
+    width: 80%;
+    float: none;
+    margin-right: 0;
+    margin-left: 10%;
+  }
+
+  .text-head {
+    font-size: 20px;
+  }
+
+  .text-subhead {
+    font-size: 14px;
+  }
+
+  .fruits-img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* p3  */
+
+.div-links:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#apples {
+  width: 70%;
+  height: 400px;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 10px;
+  border-radius: 20px;
+}
+
+.p3-title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.p3-text {
+  height: 250px;
+  width: 70%;
+  margin-left: 15%;
+  border: 1px solid rgb(163, 163, 163);
+  text-align: center;
+  margin-bottom: 10%;
+  box-shadow: 0px 0px 6px rgb(212, 212, 212);
+  border-radius: 15px;
+}
+
+.cart-buttons {
+  background-color: white;
+  border: 1px solid #6b9714;
+  padding: 5px 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.cart-buttons:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+#qty {
+  width: 30px;
+}
+
+#plus {
+  background-color: white;
+  border: 1px solid green;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+#minus {
+  background-color: white;
+  border: 1px solid red;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+#plus:hover {
+  background-color: green;
+  color: white;
+}
+
+#minus:hover {
+  background-color: red;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  /* .p3-text {
+    height: 250px;
+  } */
+
+  #apples {
+    height: 250px;
+  }
+
+  .h3-1 {
+    font-size: 16px;
+  }
+}
