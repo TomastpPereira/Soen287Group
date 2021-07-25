@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding-bottom: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    display: grid;
+    background-color: white;
+}
+
+/* Styling for the navbar */
+.navbar {
+    overflow: hidden;
+    background-color:#434255;
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: rgb(77, 77, 77);
+}
+.navbar a.active {
+    background-color: #356FDA;
+    color: white;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #E7E4DF;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for the banner below navbar */
+#banner {
+    text-align: center;
+    border: 3px solid white;
+    color: black;
+    background-color: white;
+}
+#banner h1{
+    font-size: 60px;
+}
+#banner h4{
+    font-size: 20px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #434255;
+    overflow: hidden;
+    color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* P2: Styling for the meat & poultry aisle by Arie */
+.aisle-box {
+    background: white;
+    padding-bottom: 15px;
+    padding-top: 35px;
+    height: auto;
+    width: 100%; 
+    border-right: 25px;
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.aisle-content {
+    width: 40%;
+    height: auto;
+    font-size: 10pt;
+    text-align: center;
+    border-radius: 50px;
+    color: black;
+    box-shadow: 0 0 10px grey;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h3{
+    font-size: 16pt;
+}
+img {
+    max-width: 100%;
+    max-height: 85%;
+    border-radius: 50px;
+}
+/* Styling when Different Sized Screen */  
+@media screen and (max-width:1200px) {
+    .aisle-content{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .aisle-content img {
+        width:  70%;
+        height: 70%;
+    }
+}
+@media screen and (max-width:700px) {
+    .aisle-content{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .aisle-content img {
+        width:  70%;
+        height: 70%;
+    }
+    .footer{
+        visibility: hidden;
+    }
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
