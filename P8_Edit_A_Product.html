@@ -3,7 +3,8 @@
 <html lang="en">
     <head>
         <title> Edit A Product </title>
-        <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >
+<!--        <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >-->
+        <link rel = "stylesheet type" type = "text/css" href= "Edit_User_Profile.css" >
     </head>
 
     <body>
@@ -17,20 +18,24 @@
             <a href="#"> Edit Order </a>
         </div>
 
+        <div style="text-align: center">
         <h2> Current Product Info </h2>
         <p> Displaying of the info of the Product</p>
-        <div class="form-container" style="padding-left: 25px;">
-            <h2> Input Fields to Be Edited </h2>
+        </div>
+        <div class="edit-option-box" style="padding: 20px 70px 20px 20px">
+            <h3> Input Fields to Be Edited: </h3>
             <form action="#">
+                <div style="font-size: 14px">
                 <label for="PName"> Product Name </label>
                 <input type="text" id="PName" name="PName"><br><br>
                 <label for="PCost"> Product Cost </label>
-                <input type="text" id="PCost" name="PCost"><br><br>
-                <input type="submit" value="Save">
-                <input type="button" value="Add a New Product">
-                <input type="button" value="Delete This Product">
+                <input type="text" id="PCost" name="PCost"><br><br> <hr style="width:111%"> <br>
+                <input type="submit" style="width:112%" value="Save"> <br><br>
+                <input type="button" style="width:112%" value="Add a New Product"> <br><br>
+                <input type="button" style="width:112%" value="Delete This Product"> <br><br>
+                </div>
             </form>
-            <p> Click Sumbit below to confirm the new Information and save it </p>
+            <p> Click Submit below to confirm the new Information and save it </p>
         </div>
     </body> 
 
