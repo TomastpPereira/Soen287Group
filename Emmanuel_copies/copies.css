@@ -1,10 +1,15 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
+
+/* Styling for the navbar */
 .navbar {
+  text-shadow: none;
   overflow: hidden;
-  background-color: #333;
+  background-color: #434255;
+  font-weight: normal;
 }
 .navbar a {
   float: left;
@@ -20,7 +25,7 @@ body {
   color: rgb(77, 77, 77);
 }
 .navbar a.active {
-  background-color: #1c5bcf;
+  background-color: #356fda;
   color: white;
 }
 .dropdown {
@@ -31,7 +36,7 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #e7e4df;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -53,20 +58,20 @@ body {
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Styling for the banner below navbar */
 #banner {
+  text-shadow: none;
   text-align: center;
-  border: 3px solid #333;
-  color: white;
-  background-color: #333;
+  border: 3px solid #434255;
+  color: #f2f2f2;
+  background-color: #434255;
 }
 #banner h1 {
   font-size: 60px;
@@ -74,15 +79,19 @@ body {
 #banner h4 {
   font-size: 20px;
 }
+
+/* Footer Styling */
 .footer {
-  background-color: #333;
+  text-shadow: none;
+  background-color: #434255;
   overflow: hidden;
-  border-top: 1px #333;
-  color: white;
-  position: fixed;
+  color: #ffffff;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
+  font-weight: normal;
 }
 
 /* p2 copy styling */
@@ -102,10 +111,9 @@ body {
 
 .outter-fruits {
   margin-top: 5%;
-  /* border: 1px solid green; */
   width: 100%;
   height: 200px;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .div-fruits {
@@ -116,7 +124,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 3px 8px 3px #dddddd;
   transition-duration: 0.5s;
-  /* cursor: pointer; */
 }
 
 .div-fruits2 {
@@ -150,7 +157,6 @@ body {
 .images-text {
   float: right;
   margin-right: 10%;
-  /* border: 1px solid black; */
 }
 
 .text-head {
@@ -166,7 +172,6 @@ body {
   .outter-fruits {
     width: 100%;
     height: 400px;
-    border: 1px solid black;
   }
   .div-fruits {
     width: 80%;
@@ -196,7 +201,7 @@ body {
   }
 }
 
-/* p3  */
+/* p3 copy styling */
 
 .div-links:visited {
   text-decoration: none;
@@ -269,10 +274,6 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  /* .p3-text {
-    height: 250px;
-  } */
-
   #apples {
     height: 250px;
   }
