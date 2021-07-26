@@ -24,6 +24,15 @@ h2{
 	min-height: 700px;
 	max-width: 1000px;
 }
+
+.edit-option-box {
+	border: 5px black solid;
+	max-width: 300px;
+	margin: auto;
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px 20px
+}
+
 label{
 	font-size:  1.2em;
 }
