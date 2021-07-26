@@ -1,6 +1,6 @@
 html, body { height: 100%; width: 100%; margin: 0; font-family: arial, sans-serif; }
 body{
-	background-image: url('sign-in.jpg');
+	background-image: url('images/sign-in.jpg');
 	background-size: cover;
 	background-attachment: fixed;
     background-position: center;
@@ -53,8 +53,10 @@ p{
 }
 /* Styling for the navbar */
 .navbar {
+    text-shadow: none;
     overflow: hidden;
-    background-color: #333;
+    background-color:#434255;
+    font-weight: normal;
 }
 .navbar a {
     float: left;
@@ -69,7 +71,7 @@ p{
     color: rgb(77, 77, 77);
 }
 .navbar a.active {
-    background-color: #1c5bcf;
+    background-color: #356FDA;
     color: white;
 }
 .dropdown {
@@ -80,7 +82,7 @@ p{
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #E7E4DF;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -111,7 +113,7 @@ p{
 
 /* Footer Styling */
 .footer {
-    background-color: #333;
+    background-color: #434255;
     overflow: hidden;
     color: white;
     position: fixed;
