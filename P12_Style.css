@@ -5,7 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color:black;
     display: grid;
-    background-color: white; 
+    background-color: #817f82; 
 }
 
 
@@ -211,4 +211,27 @@ body{
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+}
+
+.image{
+    width: 200px;
+    border-radius:100px;
+    float: center;
+    margin-right: 10px;
+}
+
+.image2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    border-radius:75px;
+    float: center;
+}
+
+.box {
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
 }
