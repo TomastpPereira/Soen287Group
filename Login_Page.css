@@ -1,49 +1,62 @@
 html, body { height: 100%; width: 100%; margin: 0; font-family: arial, sans-serif; }
 body{
-	background-image: url('./sign-in.jpg');
+	background-image: url('images/sign-in.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 h1{
 	font-family: times new roman, arial, sans-serif;
 	font-size: 200%;
 }
 .login-box{
-		width:  18%;
-		height: 30%;
-		text-align: center;
-		background-color: rgba(255,255,255,0.7);
-		margin-top: 3%;
-		margin-left: auto;
-   		margin-right: auto;
-		border: 3px black solid;
-		padding: 30px;
-/*		overflow: auto;
-*/		resize: both;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+	width:  18%;
+	height: 32.5%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px black solid;
+	padding: 30px;
+    max-height: 500px;
+    min-width: 300px;
 }
 .sign-in-button{
-		background-color: #3443eb;
-		color: white;
-		text-align: center;
-		border: 2px #3443eb;
-	  	border-radius: 5px;
-	  	height:  30px;
-	  	width:  90px;
-	  	font:  bold 15px arial, sans-serif;
+	background-color: #3443eb;
+	color: white;
+	text-align: center;
+	border: 2px #3443eb;
+  	border-radius: 5px;
+  	height:  30px;
+  	width:  90px;
+  	font:  bold 15px arial, sans-serif;
 }
 input[type=email], input[type=password]{
-		text-align: center;
-		width: 55%;
-		height:  2.2em;
-		margin-left: auto;
-   		margin-right: auto;
-   		box-sizing: border-box;
+	text-align: center;
+	width: 55%;
+	height:  2.2em;
+	box-sizing: border-box;
 }
-
+input[type=email]{
+    margin-bottom: 5px;
+}
+p{
+    white-space: nowrap;
+}
+#pwd{
+    font-size: 9pt;
+}
 /* Styling for the navbar */
 .navbar {
+    text-shadow: none;
     overflow: hidden;
     background-color:#434255;
+    font-weight: normal;
 }
 .navbar a {
     float: left;
@@ -102,7 +115,7 @@ input[type=email], input[type=password]{
 .footer {
     background-color: #434255;
     overflow: hidden;
-    color: #FFFFFF;
+    color: white;
     position: fixed;
     left: 0;
     bottom: 0;

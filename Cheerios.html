@@ -4,25 +4,28 @@
 <head>
   <title> Cheerios </title>
   <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >
+  <script type="text/javascript" src="P3_Cereals_Script.js"> </script>
 </head>
 
 <body>
   <div class="navbar">
     <a class="active" href="index.html">Home</a>
     <div class="dropdown">
-      <button class="dropbtn">
-        Aisles
-      </button>
-      <div class="dropdown-content">
-        <a href="P2_Fruits.html"> Fruits and Vegetables </a>
-        <a href="P2_Cereals.html"> Cereals </a>
-        <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
-      </div>
+        <button class="dropbtn"> 
+            Aisles
+        </button>
+        <div class="dropdown-content">
+            <a href="P2_Fruits.html"> Fruits & Vegetables</a>
+            <a href="P2_Cereals.html"> Cereals </a>
+            <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
+            <a href="P2_Meat.html"> Meat </a>
+            <a href="Emmanuel_copies/P2.html"> Fruit 2 </a>
+        </div>
     </div>
     <a href="P4_ShoppingCart.html"> Shopping Cart </a>
     <a href="P5_Login.html"> Login </a>
     <a href="P6_SignUp.html"> Sign Up</a>
-  </div>
+</div>
 
 <div class="container" id="banner">
   <h1> Cereals </h1>
@@ -49,11 +52,26 @@
       <td> 100 Cal </td>
     </tr>
   </table>
+
+  <div id="More-Description">
+    This is the text for more Description
+  </div>
+
+  <form>
+    <label>Quantity:</label>
+    <input type="number" name="Quantity" min="1" max="50"> <!-- quantity min/max -->
+    <br>
+    <br>
+    <button type="submit" class="add-to-cart-button">Add to Cart</button>
+  </form>
+
+  <button onclick="hideDescription()"> More Description </button>
 </div>
 
 <div class="footer">
-    <p style="text-align: center;"> Our Info </p>
-    <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
+  <p style="text-align: center;"> Our Info </p>
+  <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers. </p>
+  <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
 </div>
 </body>
 </html>
