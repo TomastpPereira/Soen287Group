@@ -10,6 +10,7 @@ var addToCartBtn = document.getElementById("addToCart");
 var element = document.getElementById("item");
 var itemName = element.innerText;
 
+
 // This is to keep count after refresh
 
 if(localStorage.getItem(itemName) == null) {
@@ -26,6 +27,12 @@ else {
 addToCartBtn.addEventListener('click', function () {
     alert("Item added to cart!");
 });
+
+// Save Order Button Alert
+
+function saveOrderAlert() {
+    alert("Order Saved!");
+}
 
 // Add and remove function
 
