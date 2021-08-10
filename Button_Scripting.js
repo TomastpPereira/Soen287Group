@@ -6,6 +6,11 @@
     var add = document.getElementById("add");
     var counterDiv = document.getElementById("qty");
     var subtotal = document.getElementById("subtotal");
+    var addToCartBtn = document.getElementById("addToCart");
+
+    addToCartBtn.addEventListener('click', function() {
+        alert("Item added to cart!");
+    });
 
     add.addEventListener('click', function () {
         if(count < max) {
