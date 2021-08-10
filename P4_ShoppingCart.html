@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shopping Cart</title>
         <link rel="stylesheet" href="./Styles_P4_P11.css">
+        <script src="/p4_ShopppingCart.js"></script>
     </head>
     <body>
         <div class="navbar">
@@ -30,11 +31,11 @@
         <div>
             <h1 style="margin-left: 2%; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Cart Items</h1>
             
-            <form action="" class="top-form">
+            <div class="top-form">
                 
-                <button type="submit" class="shop">Continue Shopping</button>
+                <button type="submit" class="shop" onclick="location.href='/P2_Fruits.html'">Continue Shopping</button>
                 
-            </form>
+            </div>
         </div>
         <br>
         
@@ -71,13 +72,15 @@
             
                 <div class="inner-text">
                     
-                    <h2 class="price-heading"> Price: <br> $/each: <br><br> Qty: <input type="text" placeholder="#" class="qty"></h2>
-                    <form action="">
-                        <button type="submit" class="add" onclick="countQty()"><strong>+ Add</strong></button>
-                        <button type="submit" class="remove"><strong>- Less</strong></button>
-                        <br><br><br>
+                    <h2 class="price-heading">Price: <input type="text" value="0" class="price-in" id="price-one"> </h2>
+                    <h2 class="price-heading">$/each: <input type="text" value="0.5" class="price-each" id="each-one"></h2>
+                    <h2 class="price-heading">Qty: <input type="text" value="0" class="qty" id="qty-one"></h2>
+                    <!-- <form action=""> -->
+                        <button class="add" onclick="incrementQuantity()"><strong>+ Add</strong></button>
+                        <button class="remove" onclick="decrementQuantity()"><strong>- Less</strong></button>
+                        <br><br>
                         <button type="submit" class="delete"><strong>X Delete Item</strong></button>
-                    </form>
+                    <!-- </form> -->
 
                 </div>
                 
