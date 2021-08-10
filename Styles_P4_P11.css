@@ -203,6 +203,20 @@ body {
   font-size: 18px;
 }
 
+.price-in {
+  width: 40px;
+  background-color: #f9f7f0;
+  border: none;
+  font-size: 16px;
+}
+
+.price-each {
+  width: 40px;
+  background-color: #f9f7f0;
+  border: none;
+  font-size: 16px;
+}
+
 .qty {
   width: 20px;
   background-color: #f0f0e0;
