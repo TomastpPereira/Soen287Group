@@ -1,4 +1,4 @@
-var price = 0.99; // set price of item
+// var price = 0.99; // set price of item
 var max = 12; // set max of item
 
 var count;
