@@ -79,26 +79,25 @@ class Peach{
     price = valueCount * priceEach;
     totalItems++;
     
-    console.log(arrayFruits.length);
     document.getElementById("qty-one").value = valueCount;
-    document.getElementById("price-one").value = price+"$";
+    document.getElementById("price-one").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
     
  }
 
@@ -111,6 +110,7 @@ class Peach{
     if (valueCount == 0){
         valueCount = 0;
         alert("Whoops, cannot have a negative value")
+        return;
     }
     else{
         let index = arrayFruits.findIndex(Banana => Banana.name === "banana");
@@ -119,26 +119,26 @@ class Peach{
         price = valueCount * priceEach;
         totalItems--;
     }
-    console.log(arrayFruits.length);
+
     document.getElementById("qty-one").value = valueCount;
-    document.getElementById("price-one").value = price+"$";
+    document.getElementById("price-one").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
  }
 
 
@@ -153,26 +153,25 @@ class Peach{
     price = valueCount * priceEach;
     totalItems++;
     
-    console.log(arrayFruits.length);
     document.getElementById("qty-two").value = valueCount;
-    document.getElementById("price-two").value = price+"$";
+    document.getElementById("price-two").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
     
  }
 
@@ -184,7 +183,8 @@ class Peach{
 
     if (valueCount == 0){
         valueCount = 0;
-        alert("Whoops, cannot have a negative value")
+        alert("Whoops, cannot have a negative value");
+        return;
     }
     else{
         let index = arrayFruits.findIndex(Apple => Apple.name === "apple");
@@ -193,26 +193,26 @@ class Peach{
         price = valueCount * priceEach;
         totalItems--;
     }
-    console.log(arrayFruits.length);
+
     document.getElementById("qty-two").value = valueCount;
-    document.getElementById("price-two").value = price+"$";
+    document.getElementById("price-two").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
  }
 
  function incrementQuantityOrange() {
@@ -226,26 +226,25 @@ class Peach{
     price = valueCount * priceEach;
     totalItems++;
     
-    console.log(arrayFruits.length);
     document.getElementById("qty-three").value = valueCount;
-    document.getElementById("price-three").value = price+"$";
+    document.getElementById("price-three").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
     
  }
 
@@ -257,7 +256,8 @@ class Peach{
 
     if (valueCount == 0){
         valueCount = 0;
-        alert("Whoops, cannot have a negative value")
+        alert("Whoops, cannot have a negative value");
+        return;
     }
     else{
         let index = arrayFruits.findIndex(Orange => Orange.name === "orange");
@@ -266,26 +266,26 @@ class Peach{
         price = valueCount * priceEach;
         totalItems--;
     }
-    console.log(arrayFruits.length);
+
     document.getElementById("qty-three").value = valueCount;
-    document.getElementById("price-three").value = price+"$";
+    document.getElementById("price-three").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3) +"$";
  }
 
   function incrementQuantityPeach() {
@@ -299,26 +299,25 @@ class Peach{
     price = valueCount * priceEach;
     totalItems++;
     
-    console.log(arrayFruits.length);
     document.getElementById("qty-four").value = valueCount;
-    document.getElementById("price-four").value = price+"$";
+    document.getElementById("price-four").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
     
  }
 
@@ -330,7 +329,8 @@ class Peach{
 
     if (valueCount == 0){
         valueCount = 0;
-        alert("Whoops, cannot have a negative value")
+        alert("Whoops, cannot have a negative value");
+        return;
     }
     else{
         let index = arrayFruits.findIndex(Peach => Peach.name === "peach");
@@ -339,169 +339,154 @@ class Peach{
         price = valueCount * priceEach;
         totalItems--;
     }
-    console.log(arrayFruits.length);
+    
     document.getElementById("qty-four").value = valueCount;
-    document.getElementById("price-four").value = price+"$";
+    document.getElementById("price-four").value = price.toFixed(2)+"$";
     document.getElementById("items").innerHTML = totalItems;
 
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3);
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3);
+    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3);
+    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+ }
+
+
+ function deleteBanana(){
+
+     if (confirm("Are you sure you wish to delete this item?") == true){
+         document.getElementById('row-banana').style.display = 'none';
+         let i =0;
+         while (i < arrayFruits.length){
+             if (arrayFruits[i].name == "banana"){
+                 arrayFruits.splice(i, 1);
+                 totalItems--;
+             }
+             else {
+                 ++i;
+             }
+         }
+
+        }
+        subTotal = calculateSubtotal();
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    
+        gsTax = calculateGst();
+        qsTax = calculateQst();
+    
+        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    
+        total = calculateTotal();
+        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+
+        document.getElementById("items").innerHTML = totalItems;
+    
+ }
+
+ function deleteApple(){
+
+     if (confirm("Are you sure you wish to delete this item?") == true){
+         document.getElementById('row-apple').style.display = 'none';
+         let i =0;
+         while (i < arrayFruits.length){
+             if (arrayFruits[i].name == "apple"){
+                 arrayFruits.splice(i, 1);
+                 totalItems--;
+             }
+             else {
+                 ++i;
+             }
+         }
+
+        }
+        subTotal = calculateSubtotal();
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    
+        gsTax = calculateGst();
+        qsTax = calculateQst();
+    
+        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    
+        total = calculateTotal();
+        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+
+        document.getElementById("items").innerHTML = totalItems;
+    
+ }
+
+ function deleteOrange(){
+
+     if (confirm("Are you sure you wish to delete this item?") == true){
+         document.getElementById('row-orange').style.display = 'none';
+         let i =0;
+         while (i < arrayFruits.length){
+             if (arrayFruits[i].name == "orange"){
+                 arrayFruits.splice(i, 1);
+                 totalItems--;
+             }
+             else {
+                 ++i;
+             }
+         }
+
+        }
+        subTotal = calculateSubtotal();
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    
+        gsTax = calculateGst();
+        qsTax = calculateQst();
+    
+        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    
+        total = calculateTotal();
+        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+
+        document.getElementById("items").innerHTML = totalItems;
+    
+ }
+
+ function deletePeach(){
+
+     if (confirm("Are you sure you wish to delete this item?") == true){
+         document.getElementById('row-peach').style.display = 'none';
+         let i =0;
+         while (i < arrayFruits.length){
+             if (arrayFruits[i].name == "peach"){
+                 arrayFruits.splice(i, 1);
+                 totalItems--;
+             }
+             else {
+                 ++i;
+             }
+         }
+
+        }
+        subTotal = calculateSubtotal();
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    
+        gsTax = calculateGst();
+        qsTax = calculateQst();
+    
+        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    
+        total = calculateTotal();
+        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+
+        document.getElementById("items").innerHTML = totalItems;  
  }
  
-//whats left is to figure out how you are gonna make the buttons work for each item (solutions right now: if statement where we fetch id to get correct each value, second is to make a different function for each item (basically copy))
 
-//also, gotta figure out how the subtotal will fetch info form all other buttons
-
-// class Banana{
-
-//     constructor(){
-//         this.price = 0.5;
-//         this.number = 1;
-//         this.name = "banana"
-//     }
-// }
-
-// const arrayFruits = [];
-
-// function incrementTry(){
-
-//     var numOfBananas = document.getElementById("qty-one").value;
-
-//     arrayFruits.push(new Banana());
-//     numOfBananas++;
-
-//     document.getElementById("qty-one").value = numOfBananas;
-
-//     console.log(arrayFruits.length);
-//     // document.getElementById("price-one").value = price+"$";
-//     // document.getElementById("items").innerHTML = totalItems;
-// }
-
-// let one = new Banana();
-// let two = new Banana();
-
-// const arrayFruits = ["hey", one, two];
-// console.log(arrayFruits.findIndex(Banana => Banana.name === "banana"));
-// console.log(arrayFruits.toString());
-
-// let index = arrayFruits.findIndex(Banana => Banana.name === "banana");
-// arrayFruits.splice(index,1);
-// console.log(arrayFruits.toString());
-
-
-
-// let totalArray = 0;
-// let numbOfBanana = 0;
-
-// arrayFruits.push(new Banana());
-
-// let size = arrayFruits.length;
-// console.log(size);
-// for (let y = 0; y < size; y++){
-//     totalArray += arrayFruits[y].price;
-//     numbOfBanana += arrayFruits[y].number;
-
-// }
-// console.log(totalArray);
-// console.log(numbOfBanana);
-
-
-
-// function incrementQuantity() {
-
-//     let valueCount = document.getElementById("qty-one").value;
-//     let price = document.getElementById("price-one").value;
-//     let priceEach = document.getElementById("each-one").value;
-    
-//     arrayFruits.push(new Banana());
-//     valueCount++;
-//     price = valueCount * priceEach;
-//     totalItems++;
-    
-//     console.log(arrayFruits.length);
-//     document.getElementById("qty-one").value = valueCount;
-//     document.getElementById("price-one").value = price+"$";
-//     document.getElementById("items").innerHTML = totalItems;
-
-//     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
-
-//     //subTotal = price; 
-//     subTotal = calculateSubtotal();
-//     document.getElementById("subtotal").innerHTML = subTotal;
-
-//     // gst and qst (same concept as subtotal)
-//     // gsTax = 0.05 * price;
-//     gsTax = calculateGst();
-//     // qsTax = .09975 * price;
-//     qsTax = calculateQst();
-
-//     document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-//     document.getElementById("qst").innerHTML = qsTax.toFixed(3);
-
-//     // total (same concept as subtotal)
-//     // total = subTotal + gsTax + qsTax;
-//     total = calculateTotal();
-
-//     document.getElementById("total").innerHTML = total.toFixed(3);
-    
-//  }
-
-//  function decrementQuantity() {
-
-//     let valueCount = document.getElementById("qty-one").value;
-//     let price = document.getElementById("price-one").value;
-//     let priceEach = document.getElementById("each-one").value;
-
-
-
-//     if (valueCount == 0){
-//         valueCount = 0;
-//         alert("Whoops, cannot have a negative value")
-//     }
-//     else{
-//         let index = arrayFruits.findIndex(Banana => Banana.name === "banana");
-//         arrayFruits.splice(index,1);
-//         valueCount--;
-//         price = valueCount * priceEach;
-//         totalItems--;
-//     }
-//     console.log(arrayFruits.length);
-//     document.getElementById("qty-one").value = valueCount;
-//     document.getElementById("price-one").value = price+"$";
-//     document.getElementById("items").innerHTML = totalItems;
-
-//      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
-
-//     subTotal = price; 
-//     document.getElementById("subtotal").innerHTML = subTotal;
-
-//     // gst and qst (same concept as subtotal)
-//     // gsTax = 0.05 * price;
-//     // qsTax = .09975 * price;
-
-//     gsTax = calculateGst();
-//     qsTax = calculateQst();
-
-//     document.getElementById("gst").innerHTML = gsTax.toFixed(3);
-//     document.getElementById("qst").innerHTML = qsTax.toFixed(3);
-
-//     // total (same concept as subtotal)
-
-//     total = subTotal + gsTax + qsTax;
-
-//     document.getElementById("total").innerHTML = total.toFixed(3);
-     
-//  }
