@@ -86,18 +86,18 @@ class Peach{
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
     
  }
 
@@ -127,18 +127,18 @@ class Peach{
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
  }
 
 
@@ -160,18 +160,18 @@ class Peach{
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
     
  }
 
@@ -201,18 +201,18 @@ class Peach{
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
  }
 
  function incrementQuantityOrange() {
@@ -233,18 +233,18 @@ class Peach{
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
     
  }
 
@@ -274,18 +274,18 @@ class Peach{
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3) +"$";
+    document.getElementById("total").innerHTML = total.toFixed(2) +"$";
  }
 
   function incrementQuantityPeach() {
@@ -306,18 +306,18 @@ class Peach{
     // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
     
  }
 
@@ -347,18 +347,18 @@ class Peach{
      // subtotal (you will have to fetch price of other button fuctions and add them here docume. get by id...) 
 
     subTotal = calculateSubtotal();
-    document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
 
     // gst and qst (same concept as subtotal)
     gsTax = calculateGst();
     qsTax = calculateQst();
 
-    document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-    document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+    document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+    document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
 
     // total (same concept as subtotal)
     total = calculateTotal();
-    document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+    document.getElementById("total").innerHTML = total.toFixed(2)+"$";
  }
 
 
@@ -379,16 +379,16 @@ class Peach{
 
         }
         subTotal = calculateSubtotal();
-        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
     
         gsTax = calculateGst();
         qsTax = calculateQst();
     
-        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+        document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
     
         total = calculateTotal();
-        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+        document.getElementById("total").innerHTML = total.toFixed(2)+"$";
 
         document.getElementById("items").innerHTML = totalItems;
     
@@ -411,16 +411,16 @@ class Peach{
 
         }
         subTotal = calculateSubtotal();
-        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
     
         gsTax = calculateGst();
         qsTax = calculateQst();
     
-        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+        document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
     
         total = calculateTotal();
-        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+        document.getElementById("total").innerHTML = total.toFixed(2)+"$";
 
         document.getElementById("items").innerHTML = totalItems;
     
@@ -443,16 +443,16 @@ class Peach{
 
         }
         subTotal = calculateSubtotal();
-        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
     
         gsTax = calculateGst();
         qsTax = calculateQst();
     
-        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+        document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
     
         total = calculateTotal();
-        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+        document.getElementById("total").innerHTML = total.toFixed(2)+"$";
 
         document.getElementById("items").innerHTML = totalItems;
     
@@ -475,16 +475,16 @@ class Peach{
 
         }
         subTotal = calculateSubtotal();
-        document.getElementById("subtotal").innerHTML = subTotal.toFixed(3)+"$";
+        document.getElementById("subtotal").innerHTML = subTotal.toFixed(2)+"$";
     
         gsTax = calculateGst();
         qsTax = calculateQst();
     
-        document.getElementById("gst").innerHTML = gsTax.toFixed(3)+"$";
-        document.getElementById("qst").innerHTML = qsTax.toFixed(3)+"$";
+        document.getElementById("gst").innerHTML = gsTax.toFixed(2)+"$";
+        document.getElementById("qst").innerHTML = qsTax.toFixed(2)+"$";
     
         total = calculateTotal();
-        document.getElementById("total").innerHTML = total.toFixed(3)+"$";
+        document.getElementById("total").innerHTML = total.toFixed(2)+"$";
 
         document.getElementById("items").innerHTML = totalItems;  
  }
