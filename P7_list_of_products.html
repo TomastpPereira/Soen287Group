@@ -4,9 +4,19 @@
 <head>
     <title> List of Products </title>
     <link rel="stylesheet type" type="text/css" href="Style_HomePageTemplate.css">
+    <script type="text/javascript" src="Button_Scripting.js"> </script>
+    <style>
+      a {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        color: initial;
+      }
+    </style>
 </head>
 
-<body>
+<body style="padding-bottom: 0; ">
   <div class="navbar">
     <a class="active" href="index.html">Home</a>
     <a href="P7_list_of_products.html"> Product List </a>
@@ -22,6 +32,10 @@
     <h1> Product List </h1>
     <h2> Here's our great selection of product! </h2>
 </div>
+
+
+<a href="P8_Edit_A_Product.html" class="button" style="width: 10%; margin-left: 50px; margin-top: 30px;"> Add!</a>
+
 <div style="padding: 24px 24px 24px 24px">
   <div style="padding: 24px 24px 24px 24px;
           background-color: lightgoldenrodyellow;
@@ -52,10 +66,8 @@
       </tr>
     </table>
     <br>
-
-    <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Add!</a>
-    <a href="#" class="button"> Delete!</a>
-    <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Edit!</a>
+    <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
+    <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
   </div>
 </div>
 
@@ -90,9 +102,8 @@
             </tr>
         </table>
         <br>
-        <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Add!</a>
-        <a href="#" class="button"> Delete!</a>
-        <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Edit!</a>
+        <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
+        <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
         <br><br>
     </div>
 </div>
@@ -127,10 +138,8 @@
       </tr>
     </table>
     <br>
-
-    <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Add!</a>
-    <a href="#" class="button"> Delete!</a>
-    <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Edit!</a>
+    <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
+    <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
 
   </div>
 </div>
@@ -166,16 +175,15 @@
         </tr>
       </table>
       <br>
-
-      <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Add!</a>
-      <a href="#" class="button"> Delete!</a>
-      <a href="http://127.0.0.1:52241/Soen287Group-main/P8_Edit_A_Product.html" class="button"> Edit!</a>
+      <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
+      <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
 
     </div>
   </div>
+</div>
 
 
-<div class="footer">
+<div class="footer" style="position: relative; padding: 0; margin: 0;">
     <p style="text-align: center;"> Our Info </p>
     <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers. </p>
     <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>

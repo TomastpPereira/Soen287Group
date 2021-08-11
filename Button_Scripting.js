@@ -34,6 +34,12 @@ function saveOrderAlert() {
     alert("Order Saved!");
 }
 
+// Delete Product Button Alert
+
+function deleteProductAlert() {
+    alert("Product Deleted!");
+}
+
 // Add and remove function
 
 add.addEventListener('click', function () {
