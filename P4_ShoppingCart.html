@@ -47,12 +47,12 @@
             <div class="prices">
                 <h3 class="sub-prices" style="display: inline;" id="items">0</h3>
                 <hr>
-                <h3 class="sub-prices" id="subtotal">0.000$</h3>
+                <h3 class="sub-prices" id="subtotal">0.00$</h3>
                 <hr>
-                <h3 class="sub-prices" id="gst">0.000$</h3>
-                <h3 class="sub-prices" id="qst">0.000$</h3>
+                <h3 class="sub-prices" id="gst">0.00$</h3>
+                <h3 class="sub-prices" id="qst">0.00$</h3>
                 <hr>
-                <h3 class="sub-prices" id="total">0.000$</h3>
+                <h3 class="sub-prices" id="total">0.00$</h3>
                 
             </div>
 
@@ -74,18 +74,18 @@
         </div>
         
         <div class="outer-rec">
-            <div class="row">
+            <div class="row" id="row-banana">
             
                 <div class="inner-text">
                     
-                    <h2 class="price-heading">Price: <input type="text" value="0" class="price-in" id="price-one"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" value="0.5" class="price-each" id="each-one"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" value="0" class="qty" id="qty-one"></h2>
+                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-one"> </h2>
+                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.5" class="price-each" id="each-one"></h2>
+                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-one"></h2>
                    
                     <button class="add" onclick="incrementQuantityBanana()"><strong>+ Add</strong></button>
                     <button class="remove" onclick="decrementQuantityBanana()"><strong>- Less</strong></button>
                     <br><br>
-                    <button type="submit" class="delete"><strong>X Delete Item</strong></button>
+                    <button class="delete" onclick="deleteBanana()"><strong>X Delete Item</strong></button>
                     
                 </div>
                 
@@ -95,18 +95,18 @@
         
             <br>
             
-            <div class="row">
+            <div class="row" id="row-apple">
                 
                <div class="inner-text">
                     
-                    <h2 class="price-heading">Price: <input type="text" value="0" class="price-in" id="price-two"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" value="0.4" class="price-each" id="each-two"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" value="0" class="qty" id="qty-two"></h2>
+                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-two"> </h2>
+                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.4" class="price-each" id="each-two"></h2>
+                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-two"></h2>
                    
                     <button class="add" onclick="incrementQuantityApple()"><strong>+ Add</strong></button>
                     <button class="remove" onclick="decrementQuantityApple()"><strong>- Less</strong></button>
                     <br><br>
-                    <button type="submit" class="delete"><strong>X Delete Item</strong></button>
+                    <button class="delete" onclick="deleteApple()"><strong>X Delete Item</strong></button>
 
                 </div>
                 
@@ -116,18 +116,18 @@
             </div>
             <br>
             
-            <div class="row">
+            <div class="row" id="row-orange">
                 
                 <div class="inner-text">
                 
-                    <h2 class="price-heading">Price: <input type="text" value="0" class="price-in" id="price-three"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" value="0.6" class="price-each" id="each-three"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" value="0" class="qty" id="qty-three"></h2>
+                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-three"> </h2>
+                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.6" class="price-each" id="each-three"></h2>
+                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-three"></h2>
                 
                     <button class="add" onclick="incrementQuantityOrange()"><strong>+ Add</strong></button>
                     <button class="remove" onclick="decrementQuantityOrange()"><strong>- Less</strong></button>
                     <br><br>
-                    <button type="submit" class="delete"><strong>X Delete Item</strong></button>
+                    <button class="delete" onclick="deleteOrange()"><strong>X Delete Item</strong></button>
                 
                 </div>
                 
@@ -137,18 +137,18 @@
             </div>
             <br>
            
-            <div class="row">
+            <div class="row" id="row-peach">
                 
                 <div class="inner-text">
                 
-                    <h2 class="price-heading">Price: <input type="text" value="0" class="price-in" id="price-four"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" value="0.8" class="price-each" id="each-four"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" value="0" class="qty" id="qty-four"></h2>
+                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-four"> </h2>
+                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.8" class="price-each" id="each-four"></h2>
+                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-four"></h2>
                 
                     <button class="add" onclick="incrementQuantityPeach()"><strong>+ Add</strong></button>
                     <button class="remove" onclick="decrementQuantityPeach()"><strong>- Less</strong></button>
                     <br><br>
-                    <button type="submit" class="delete"><strong>X Delete Item</strong></button>
+                    <button class="delete" onclick="deletePeach()"><strong>X Delete Item</strong></button>
                 
                 </div>
                 
@@ -156,40 +156,6 @@
                 
                 
             </div>
-        
-        </div>
-
-        <div class="payment2">
-        
-            <h2 style="text-align: center;">Summary of order:</h2>
-        
-        
-            <div class="prices">
-                <h3 class="sub-prices" style="display: inline;" id="items">0</h3>
-                <hr>
-                <h3 class="sub-prices" id="subtotal">0.000$</h3>
-                <hr>
-                <h3 class="sub-prices" id="gst">0.000$</h3>
-                <h3 class="sub-prices" id="qst">0.000$</h3>
-                <hr>
-                <h3 class="sub-prices" id="total">0.000$</h3>
-            
-            </div>
-            
-            
-            <div class="Summary">
-                <h3 class="summary" style="display: inline;">Total Items: </h3>
-                <hr>
-                <h3 class="summary">Subtotal:</h3>
-                <hr>
-                <h3 class="summary">GST: </h3>
-                <h3 class="summary">QST: </h3>
-                <hr>
-                <h3 class="summary">Total:</h3>
-            
-            </div>
-        
-        
         
         </div>
            
