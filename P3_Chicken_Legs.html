@@ -2,15 +2,17 @@
 
 <html lang="en">
 <head>
-  <title> Chicken Legs </title>
-  <link rel = "stylesheet type" type = "text/css" href= "P3.css" >
+    <title> Chicken Legs  </title>
+    <link rel="stylesheet type" type="text/css" href="Style_HomePageTemplate.css">
+
+    <link rel="stylesheet" type="text/css" href="JS_Styling.css">
 </head>
-  <!-- navbar start-->
+
 <body>
-  <div class="navbar">
+<div class="navbar">
     <a class="active" href="index.html">Home</a>
     <div class="dropdown">
-        <button class="dropbtn"> 
+        <button class="dropbtn">
             Aisles
         </button>
         <div class="dropdown-content">
@@ -18,55 +20,89 @@
             <a href="P2_Cereals.html"> Cereals </a>
             <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
             <a href="P2_Meat.html"> Meat </a>
-            <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
+            <a href="Emmanuel_copies/P2.html"> Fruit 2 </a>
         </div>
     </div>
     <a href="P4_ShoppingCart.html"> Shopping Cart </a>
     <a href="P5_Login.html"> Login </a>
     <a href="P6_SignUp.html"> Sign Up</a>
 </div>
-<!-- navbar end-->
-<div class="flexbox-main-description"> 
-  <div class="product-image"> 
-    <img src="images/chicken-legs.jpg" alt="chicken legs">     
-  </div>
-  <div class="product-description">
-    <form>
-      <h1>Chicken Legs</h1>   <!-- item -->
-      <h2>Price: $13.99/kg</h2> <!-- price -->
-      <label>Package size:</label>
-      <select name="size">      <!-- size/type -->
-        <option value="500g">500g</option>
-        <option value="1kg">1kg</option>
-        <option value="2kg">2kg</option>
-        <option value="3kg">3kg</option>
-      </select>
-      <br>
-      <br>
-      <label>Quantity:</label>
-      <input type="number" name="Quantity" min="1" max="100"> <!-- quantity min/max -->
-      <br>
-      <br>
-      <button type="submit" class="add-to-cart-button">Add to Cart</button>
-      </form>
-      <br>
-      <br>
-      <button class="accordion">Product Description</button>
-      <div class="panel">
-        <p>All of our chicken comes from independent free range farms of the Gaspesie. </p>
-        <p>When you shop at Tomas' and Friends Grocery you know you're not only getting groceries. 
-        You're getting our legendary service and you're encouraging local business owners.
-        That's right, most of our products come from local farmers and producers so that we can give you, 
-        and your family, the freshest food possible.</p>
-      </div>
-  </div>
+
+<div class="container" id="banner">
+    <h1> Meat & Poultry </h1>
+    <h4> Aisle 7 </h4>
 </div>
-<div class="footer-image">
+
+<div style="padding-left: 24px; padding-right: 24px;">
+
+    <div id="productInfo">
+
+        <img src="images/chicken-legs.jpg"
+             id="picture" alt="Chicken Legs"/>
+
+        <div id="productDescription" style="margin: 0px 0px 25px 25px; max-width: 500px;">
+            <p style="text-align: center; font-weight: bold"> Chicken Legs </p>
+            <p>
+                All of our chicken comes from independent free range farms of the Gaspesie.
+            </p>
+            <div style="background-color: lightgray; padding: 10px 15px 10px 10px; border-radius: 8px;">
+                <div style="display: flex">
+                    <labeL style="margin-right: 6px">Quantity:</labeL>
+                    <button id="remove" style="margin-right: 6px"> -</button>
+                    <div id="qty" style="margin-right: 6px">0</div>
+                    <button id="add" style="margin-right: 6px"> +</button>
+                </div>
+                <div style="display: flex; margin-top: 6px">
+                    <div style="margin-right: 6px"> Subtotal:</div>
+                    <div id="subtotal" style="margin-right: 6px"> $0.00</div>
+                    <button id="addToCart" style="margin-left: auto; min-width: 85px">Add to Cart</button>
+                </div>
+
+            </div>
+            <hr style="margin-top:20px">
+
+            <button id="moreDescriptionBtn" style="width: 100%; text-align: left " onclick="unHideDescription()">
+                Show Detailed Description
+            </button>
+
+            <hr/>
+
+
+            <div id="description" style="visibility: hidden">
+                <p id="moreDescription"> When you shop at Tomas' and Friends Grocery you know you're not only getting groceries. 
+                                        You're getting our legendary service and you're encouraging local business owners.
+                                        That's right, most of our products come from local farmers and producers so that we can give you, 
+                                        and your family, the freshest food possible. </p>
+
+                <table id="table">
+                    <tr>
+                        <td> Weight:</td>
+                        <td> 1kg</td>
+                    </tr>
+                    <tr>
+                        <td> Price:</td>
+                        <td id="unit_Cost"> $13.99/unit</td>
+                    </tr>
+                    <tr>
+                        <td> Calories:</td>
+                        <td> 400 Cal per 100 grams</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p style="text-align: center;"> Our Info </p>
+        <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued
+            customers. </p>
+        <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
+    </div>
 </div>
-<div class="footer">
-  <p style="text-align: center;"> Our Info </p>
-  <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers. </p>
-  <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
-</div>
+
 </body>
+
+<script type="text/javascript" src="Button_Scripting.js"></script>
+<script>price = 13.99;</script>
 </html>

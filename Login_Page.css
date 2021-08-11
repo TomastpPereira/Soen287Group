@@ -25,6 +25,7 @@ h1{
 	padding: 30px;
     max-height: 500px;
     min-width: 300px;
+    min-height: 400px;
 }
 .sign-in-button{
 	background-color: #3443eb;
