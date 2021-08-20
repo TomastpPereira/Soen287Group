@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<products>
+    <product>
+        <name> Banana </name>
+        <weight> 90g </weight>
+        <price> $1.29/unit </price>
+        <calories> 200 Cal </calories>
+        <productID> 1 </productID>
+        <![CDATA[<image> https://images.pexels.com/photos/5217996/pexels-photo-5217996.jpeg?cs=srgb&dl=pexels-anna-shvets-5217996.jpg&fm=jpg </image>]]>
+    <product>
+        <name> Apple </name>
+        <weight> 100g </weight>
+        <price> $0.99/unit </price>
+        <calories> 150 Cal </calories>
+        <productID> 2 </productID>
+        <![CDATA[<image> https://images.pexels.com/photos/6157055/pexels-photo-6157055.jpeg?cs=srgb&dl=pexels-laker-6157055.jpg&fm=jpg </image>]]>
+    </product>
+    <product>
+        <name> Cheerios </name>
+        <weight> 430g </weight>
+        <price> $4.99 each </price>
+        <calories> 110 Cal </calories>
+        <productID> 3 </productID>
+        <![CDATA[<image> https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80 </image>]]>
+    </product>
+    <product>
+        <name> Cornflakes </name>
+        <weight> 750g </weight>
+        <price> $9.29 each </price>
+        <calories> 100 Cal </calories>
+        <productID> 4 </productID>
+        <![CDATA[<image> https://images.unsplash.com/photo-1574156814151-ed649f815f4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80 </image>]]>
+    </product>
+    <product>
+        <name> Crunchy Cheetos </name>
+        <weight> 240g </weight>
+        <price> $5.99 each </price>
+        <calories> 160 Cal </calories>
+        <productID> 5 </productID>
+        <![CDATA[<image> https://images.unsplash.com/photo-1581533940608-d2973792f542?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80 </image>]]>
+    </product>
+    <product>
+        <name> Doritos Wasabi</name>
+        <weight> 40g </weight>
+        <price> $3.99 each </price>
+        <calories> 303 Cal </calories>
+        <productID> 6 </productID>
+        <![CDATA[<image> https://images.unsplash.com/photo-1600952841320-db92ec4047ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto </image>]]>
+    </product>
+
+    
+</products>

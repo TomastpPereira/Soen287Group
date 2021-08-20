@@ -5,6 +5,7 @@
         <title> Edit A Product </title>
 <!--        <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >-->
         <link rel = "stylesheet type" type = "text/css" href= "Edit_User_Profile.css" >
+        <script> </script>
     </head>
 
     <body>
@@ -24,7 +25,7 @@
         </div>
         <div class="edit-option-box" style="padding: 20px 70px 20px 20px">
             <h3> Input Fields to Be Edited: </h3>
-            <form action="#">
+            <form action="test_script.php" method="POST">
                 <div style="font-size: 14px">
                 <label for="PName"> Product Name </label>
                 <input type="text" id="PName" name="PName"><br><br>
@@ -37,6 +38,12 @@
                 <input type="button" style="width:112%" value="Delete This Product"> <br><br>
                 </div>
             </form>
+            <?php
+                if(isset($_POST['submit']))
+                {
+                display();
+                } 
+            ?>
             <p> Click Submit above to confirm the new Information and save it </p>
         </div>
 

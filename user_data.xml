@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<users>
+    <user>
+        <username> </username>
+        <password> </password>
+        <firstname> </firstname>
+        <lastname> </lastname> 
+        <email> </email>
+        <isadmin> </isadmin>
+    </user>
+</users>
