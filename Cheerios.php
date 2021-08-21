@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title> Oatmeal </title>
+  <title> Cheerios </title>
   <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >
   <link rel="stylesheet" type="text/css" href="JS_Styling.css">
 </head>
@@ -34,16 +34,15 @@
 
 <div style="padding-left: 24px; padding-right: 24px;">
 
-
   <div id="productInfo">
 
-    <img src="https://images.unsplash.com/photo-1571750007475-09cc42b58613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+    <img src="https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
          id="picture">
 
     <div id="productDescription" style="margin: 0px 0px 25px 25px">
-        <p id="item" style="text-align: center; font-weight: bold"> Oatmeal </p>
+        <p id="item" style="text-align: center; font-weight: bold"> Cheerios </p>
         <p>
-            Classic naturally sweetened oats ready to cook. 
+            A box of Honey Nut Cheerios. 
         </p>
         <div style="background-color: lightgray; padding: 10px 15px 10px 10px; border-radius: 8px;">
             <div style="display: flex">
@@ -69,25 +68,34 @@
 
 
         <div id="description" style="visibility: hidden">
-            <p id="moreDescription"> A great source of Carbohydrates, these oats will cook in 1.5 minutes, making them perfect for a quick breakfast or snack. </p>
+            <p id="moreDescription"> Enjoy a box of Cheerios with your family. This flavour filled cereal is sure to be a hit with everyone.</p>
 
-            <table id="table">
-                <tr>
-                    <td> Weight:</td>
-                    <td> 1 Kg</td>
-                </tr>
-                <tr>
-                    <td> Price:</td>
-                    <td> $4.29 each </td>
-                </tr>
-                <tr>
-                    <td> Calories:</td>
-                    <td> 110 Cal per serving </td>
-                </tr>
-            </table>
+            <?php
+
+                $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+                $theproduct = $xml->product[2];
+
+
+                echo("<table id=\"table\">
+                    <tr>
+                        <td> Weight:</td>
+                        <td> $theproduct->weight </td>
+                    </tr>
+                    <tr>
+                        <td> Price:</td>
+                        <td id=\"unit_Cost\"> $theproduct->price</td>
+                    </tr>
+                    <tr>
+                        <td> Calories:</td>
+                        <td> $theproduct->calories</td>
+                    </tr>
+                </table>")
+            ?>
         </div>
     </div>
+
 </div>
+
 
 <div class="footer">
   <p style="text-align: center;"> Our Info </p>
@@ -96,6 +104,6 @@
 </div>
 </body>
 
-<script>price = 4.29;</script>
+<script>price = 4.99;</script>
 <script type="text/javascript" src="Button_Scripting.js"> </script>
 </html>

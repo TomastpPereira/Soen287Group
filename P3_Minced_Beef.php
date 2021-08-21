@@ -74,20 +74,27 @@
                                         That's right, most of our products come from local farmers and producers so that we can give you, 
                                         and your family, the freshest food possible. </p>
 
-                <table id="table">
-                    <tr>
-                        <td> Weight:</td>
-                        <td> 1kg</td>
-                    </tr>
-                    <tr>
-                        <td> Price:</td>
-                        <td id="unit_Cost"> $14.99/unit</td>
-                    </tr>
-                    <tr>
-                        <td> Calories:</td>
-                        <td> 500 Cal per 100 grams</td>
-                    </tr>
-                </table>
+                <?php
+
+                    $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+                    $theproduct = $xml->product[15];
+                                                                                    
+                                                                                    
+                    echo("<table id=\"table\">
+                        <tr>
+                            <td> Weight:</td>
+                            <td> $theproduct->weight </td>
+                        </tr>
+                        <tr>
+                            <td> Price:</td>
+                            <td id=\"unit_Cost\"> $theproduct->price</td>
+                        </tr>
+                        <tr>
+                            <td> Calories:</td>
+                            <td> $theproduct->calories</td>
+                        </tr>
+                    </table>")
+                ?>
             </div>
         </div>
 

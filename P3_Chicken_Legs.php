@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title> Beef Top Round  </title>
+    <title> Chicken Legs  </title>
     <link rel="stylesheet type" type="text/css" href="Style_HomePageTemplate.css">
 
     <link rel="stylesheet" type="text/css" href="JS_Styling.css">
@@ -37,13 +37,13 @@
 
     <div id="productInfo">
 
-        <img src="images/beef-top-round1.jpg"
-             id="picture" alt="Beef Round Chuck"/>
+        <img src="images/chicken-legs.jpg"
+             id="picture" alt="Chicken Legs"/>
 
         <div id="productDescription" style="margin: 0px 0px 25px 25px; max-width: 500px;">
-            <p id="item" style="text-align: center; font-weight: bold"> Beef Top Round </p>
+            <p id="item" style="text-align: center; font-weight: bold"> Chicken Legs </p>
             <p>
-                All of our beef comes from grass fed cattle in the highlands of Mont-Tremblant.
+                All of our chicken comes from independent free range farms of the Gaspesie.
             </p>
             <div style="background-color: lightgray; padding: 10px 15px 10px 10px; border-radius: 8px;">
                 <div style="display: flex">
@@ -74,20 +74,27 @@
                                         That's right, most of our products come from local farmers and producers so that we can give you, 
                                         and your family, the freshest food possible. </p>
 
-                <table id="table">
-                    <tr>
-                        <td> Weight:</td>
-                        <td> 1kg</td>
-                    </tr>
-                    <tr>
-                        <td> Price:</td>
-                        <td id="unit_Cost"> $32.99/unit</td>
-                    </tr>
-                    <tr>
-                        <td> Calories:</td>
-                        <td> 500 Cal per 100 grams</td>
-                    </tr>
-                </table>
+                <?php
+
+                    $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+                    $theproduct = $xml->product[14];
+                                                                
+                                                                
+                    echo("<table id=\"table\">
+                        <tr>
+                            <td> Weight:</td>
+                            <td> $theproduct->weight </td>
+                        </tr>
+                        <tr>
+                            <td> Price:</td>
+                            <td id=\"unit_Cost\"> $theproduct->price</td>
+                        </tr>
+                        <tr>
+                            <td> Calories:</td>
+                            <td> $theproduct->calories</td>
+                        </tr>
+                    </table>")
+                ?>
             </div>
         </div>
 
@@ -103,6 +110,7 @@
 
 </body>
 
-<script>price = 32.99;</script>
+
+<script>price = 13.99;</script>
 <script type="text/javascript" src="Button_Scripting.js"></script>
 </html>

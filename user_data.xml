@@ -7,5 +7,6 @@
         <lastname> </lastname> 
         <email> </email>
         <isadmin> </isadmin>
+        <userid> </userid>
     </user>
 </users>

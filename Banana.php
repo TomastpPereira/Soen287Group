@@ -2,8 +2,9 @@
 
 <html lang="en">
 <head>
-    <title> Beef Round Chuck </title>
+    <title> Banana </title>
     <link rel="stylesheet type" type="text/css" href="Style_HomePageTemplate.css">
+
     <link rel="stylesheet" type="text/css" href="JS_Styling.css">
 </head>
 
@@ -28,21 +29,21 @@
 </div>
 
 <div class="container" id="banner">
-    <h1> Meat & Poultry </h1>
-    <h4> Aisle 7 </h4>
+    <h1> Fruits & Vegetables </h1>
+    <h4> Aisle 1 </h4>
 </div>
 
 <div style="padding-left: 24px; padding-right: 24px;">
 
     <div id="productInfo">
 
-        <img src="images/beef-round-chuck.jpg"
-             id="picture" alt="Beef Round Chuck"/>
+        <img src="https://images.pexels.com/photos/5217996/pexels-photo-5217996.jpeg?cs=srgb&dl=pexels-anna-shvets-5217996.jpg&fm=jpg"
+             id="picture" alt="Banana picture"/>
 
-        <div id="productDescription" style="margin: 0px 0px 25px 25px; max-width: 500px;">
-            <p id="item" style="text-align: center; font-weight: bold"> Beef Round Chuck </p>
+        <div id="productDescription" style="margin: 0px 0px 25px 25px">
+            <p id ="item" style="text-align: center; font-weight: bold"> Banana </p>
             <p>
-                All of our beef comes from grass fed cattle in the highlands of Mont-Tremblant.
+                This banana is amazing !
             </p>
             <div style="background-color: lightgray; padding: 10px 15px 10px 10px; border-radius: 8px;">
                 <div style="display: flex">
@@ -68,25 +69,33 @@
 
 
             <div id="description" style="visibility: hidden">
-                <p id="moreDescription"> When you shop at Tomas' and Friends Grocery you know you're not only getting groceries. 
-                                        You're getting our legendary service and you're encouraging local business owners.
-                                        That's right, most of our products come from local farmers and producers so that we can give you, 
-                                        and your family, the freshest food possible. </p>
+                <p id="moreDescription"> Freshly picked from floridian banana tree. They are a good source of vitamins
+                    and
+                    energy. </p>
 
-                <table id="table">
-                    <tr>
-                        <td> Weight:</td>
-                        <td> 1kg</td>
-                    </tr>
-                    <tr>
-                        <td> Price:</td>
-                        <td id="unit_Cost"> $23.99/unit</td>
-                    </tr>
-                    <tr>
-                        <td> Calories:</td>
-                        <td> 500 Cal per 100 grams</td>
-                    </tr>
-                </table>
+
+                <?php
+
+                    $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+                    $theproduct = $xml->product[0];
+
+
+                    echo("<table id=\"table\">
+                        <tr>
+                            <td> Weight:</td>
+                            <td> $theproduct->weight </td>
+                        </tr>
+                        <tr>
+                            <td> Price:</td>
+                            <td id=\"unit_Cost\"> $theproduct->price</td>
+                        </tr>
+                        <tr>
+                            <td> Calories:</td>
+                            <td> $theproduct->calories</td>
+                        </tr>
+                    </table>")
+                ?>
+
             </div>
         </div>
 
@@ -102,6 +111,7 @@
 
 </body>
 
-<script>price = 23.99;</script>
-<script type="text/javascript" src="Button_Scripting.js"> </script>
+<script>var price = 1.29;</script>
+<script type="text/javascript" src="Button_Scripting.js"></script>
+
 </html>

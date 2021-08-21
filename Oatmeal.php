@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title> FrootLoops </title>
+  <title> Oatmeal </title>
   <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >
   <link rel="stylesheet" type="text/css" href="JS_Styling.css">
 </head>
@@ -34,15 +34,16 @@
 
 <div style="padding-left: 24px; padding-right: 24px;">
 
+
   <div id="productInfo">
 
-    <img src="https://images.unsplash.com/photo-1619462111375-d1570538a0c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2158&q=80"
-         id="picture" style="min-height: 400px; min-width: 400px;" >
+    <img src="https://images.unsplash.com/photo-1571750007475-09cc42b58613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+         id="picture">
 
-    <div id="productDescription" style="margin: 0px 0px 25px 25px;">
-        <p id="item" style="text-align: center; font-weight: bold"> FrootLoops </p>
+    <div id="productDescription" style="margin: 0px 0px 25px 25px">
+        <p id="item" style="text-align: center; font-weight: bold"> Oatmeal </p>
         <p>
-            A family-sized box of FrootLoops.
+            Classic naturally sweetened oats ready to cook. 
         </p>
         <div style="background-color: lightgray; padding: 10px 15px 10px 10px; border-radius: 8px;">
             <div style="display: flex">
@@ -68,22 +69,29 @@
 
 
         <div id="description" style="visibility: hidden">
-            <p id="moreDescription"> This family sized box of Froot Loops is a must for families. This cereal is part of a nutritious breakfast, made with whole grain and no articial flavours. </p>
+            <p id="moreDescription"> A great source of Carbohydrates, these oats will cook in 1.5 minutes, making them perfect for a quick breakfast or snack. </p>
 
-            <table id="table">
-                <tr>
-                    <td> Weight:</td>
-                    <td> 580g</td>
-                </tr>
-                <tr>
-                    <td> Price:</td>
-                    <td> $6.99 each </td>
-                </tr>
-                <tr>
-                    <td> Calories:</td>
-                    <td> 100 Cal per serving </td>
-                </tr>
-            </table>
+            <?php
+
+                $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+                $theproduct = $xml->product[8];
+
+
+                echo("<table id=\"table\">
+                    <tr>
+                        <td> Weight:</td>
+                        <td> $theproduct->weight </td>
+                    </tr>
+                    <tr>
+                        <td> Price:</td>
+                        <td id=\"unit_Cost\"> $theproduct->price</td>
+                    </tr>
+                    <tr>
+                        <td> Calories:</td>
+                        <td> $theproduct->calories</td>
+                    </tr>
+                </table>")
+            ?>
         </div>
     </div>
 </div>
@@ -95,6 +103,6 @@
 </div>
 </body>
 
-<script>price = 6.99;</script>
+<script>price = 4.29;</script>
 <script type="text/javascript" src="Button_Scripting.js"> </script>
 </html>

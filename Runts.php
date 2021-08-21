@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title> Crunchy Cheetos </title>
+  <title> Runts </title>
   <link rel = "stylesheet type" type = "text/css" href= "Style_HomePageTemplate.css" >
   <link rel="stylesheet" type="text/css" href="JS_Styling.css">
 </head>
@@ -28,21 +28,21 @@
 </div>
 
 <div class="container" id="banner">
-  <h1> Crunchy Cheetos </h1>
-  <h4> Chips </h4>
+  <h1> Runts </h1>
+  <h4> Candy </h4>
 </div>
 
 <div style="padding-left: 24px; padding-right: 24px;">
 
   <div id="productInfo">
 
-    <img src="https://images.unsplash.com/photo-1581533940608-d2973792f542?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    <img src="https://images.unsplash.com/photo-1600359746315-119f1360d663?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhbmR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
          id="picture">
 
     <div id="productDescription" style="margin: 0px 0px 25px 25px">
-        <p id="item" style="text-align: center; font-weight: bold"> Crunchy Cheetos </p>
+        <p id="item" style="text-align: center; font-weight: bold"> Runts </p>
         <p>
-Bag of Crunchy Cheetos. 
+A box of Runts. 
         </p>
         <div style="background-color: lightgray; padding: 10px 15px 10px 10px; border-radius: 8px;">
             <div style="display: flex">
@@ -68,22 +68,29 @@ Bag of Crunchy Cheetos.
 
 
         <div id="description" style="visibility: hidden">
-            <p id="moreDescription"> Enjoy the cheesy crunch of Crunchy Cheetos! </p>
+            <p id="moreDescription"> Enjoy the sweet taste of Runts! </p>
 
-            <table id="table">
-                <tr>
-                    <td> Weight:</td>
-                    <td> 240g</td>
-                </tr>
-                <tr>
-                    <td> Price:</td>
-                    <td> $5.99 each </td>
-                </tr>
-                <tr>
-                    <td> Calories:</td>
-                    <td> 160 Cal per serving </td>
-                </tr>
-            </table>
+            <?php
+
+                $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+                $theproduct = $xml->product[9];
+
+
+                echo("<table id=\"table\">
+                    <tr>
+                        <td> Weight:</td>
+                        <td> $theproduct->weight </td>
+                    </tr>
+                    <tr>
+                        <td> Price:</td>
+                        <td id=\"unit_Cost\"> $theproduct->price</td>
+                    </tr>
+                    <tr>
+                        <td> Calories:</td>
+                        <td> $theproduct->calories</td>
+                    </tr>
+                </table>")
+            ?>
         </div>
     </div>
 
@@ -97,6 +104,6 @@ Bag of Crunchy Cheetos.
 </div>
 </body>
 
-<script>price = 5.99;</script>
+<script>price = 2.99;</script>
 <script type="text/javascript" src="Button_Scripting.js"> </script>
 </html>
