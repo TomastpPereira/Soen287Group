@@ -1,18 +1,25 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" encoding='UTF-8' standalone="yes"?>
+
 <orders>
     <order>
-        <productID> </productID>
-        <productID> </productID>
-        <productID> </productID>
+        <product>
+            <key>Banana</key><value>3</value>
+        </product>
+        <product>
+            <key>Apple</key><value>2</value>
+        </product>
+        <product>
+            <key>Grapes</key><value>1</value>
+        </product>
     </order>
+
     <order>
-        <productID> </productID>
-        <productID> </productID>
-        <productID> </productID>
+        <product>
+            <key>Doritos</key><value>1</value>
+        </product>
+        <product>
+            <key>Meat</key><value>3</value>
+        </product>
     </order>
-    <order>
-        <productID> </productID>
-        <productID> </productID>
-        <productID> </productID>
-    </order>
+
 </orders>
