@@ -7,7 +7,7 @@
         <calories> 200 Cal </calories>
         <productID> 1 </productID>
         <image> https://images.pexels.com/photos/5217996/pexels-photo-5217996.jpeg?cs=srgb&amp;dl=pexels-anna-shvets-5217996.jpg&amp;fm=jpg </image>
-    <test text="geography"/></product>
+    </product>
     <product>
         <name> Apple </name>
         <weight> 100g </weight>
@@ -19,7 +19,7 @@
     <product>
         <name> Cheerios </name>
         <weight> 430g </weight>
-        <price> $4.99 each </price>
+        <price> $4.99/unit </price>
         <calories> 110 Cal </calories>
         <productID> 3 </productID>
         <image> https://images.unsplash.com/photo-1470909752008-c78c7f6423a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80 </image>
@@ -27,7 +27,7 @@
     <product>
         <name> Cornflakes </name>
         <weight> 750g </weight>
-        <price> $9.29 each </price>
+        <price> $4.99/unit </price>
         <calories> 100 Cal </calories>
         <productID> 4 </productID>
         <image> https://images.unsplash.com/photo-1574156814151-ed649f815f4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80 </image>
@@ -35,7 +35,7 @@
     <product>
         <name> Crunchy Cheetos </name>
         <weight> 240g </weight>
-        <price> $5.99 each </price>
+        <price> $5.99/unit </price>
         <calories> 160 Cal </calories>
         <productID> 5 </productID>
         <image> https://images.unsplash.com/photo-1581533940608-d2973792f542?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80 </image>
@@ -43,7 +43,7 @@
     <product>
         <name> Doritos Wasabi</name>
         <weight> 40g </weight>
-        <price> $3.99 each </price>
+        <price> $3.99/unit </price>
         <calories> 303 Cal </calories>
         <productID> 6 </productID>
         <image> https://images.unsplash.com/photo-1600952841320-db92ec4047ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto </image>
@@ -51,7 +51,7 @@
     <product>
         <name> FrootLoops </name>
         <weight> 580g </weight>
-        <price> $6.99 each </price>
+        <price> $6.99/unit </price>
         <calories> 100 Cal </calories>
         <productID> 7 </productID>
         <image> https://images.unsplash.com/photo-1619462111375-d1570538a0c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2158&amp;q=80 </image>
@@ -67,15 +67,15 @@
     <product>
         <name> Oatmeal </name>
         <weight> 1 Kg </weight>
-        <price> $4.29 each </price>
+        <price> $4.29/unit </price>
         <calories> 110 Cal </calories>
         <productID> 9 </productID>
-        <image> https://images.unsplash.com/photo-1571750007475-09cc42b58613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80 </image>
+        <image> https://images.unsplash.com/photo-1571750007475-09cc42b58613?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80 </image>
     </product>
     <product>
         <name> Runts </name>
         <weight> 142g </weight>
-        <price> $2.99 each </price>
+        <price> $2.99/unit </price>
         <calories> 60 Cal </calories>
         <productID> 10 </productID>
         <image> https://images.unsplash.com/photo-1600359746315-119f1360d663?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhbmR5fGVufDB8fDB8fA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60 </image>
@@ -83,7 +83,7 @@
     <product>
         <name> Skittles </name>
         <weight> 56g </weight>
-        <price> $2.99 each </price>
+        <price> $2.99/unit </price>
         <calories> 160 Cal </calories>
         <productID> 11 </productID>
         <image> https://images.unsplash.com/photo-1600359738432-965e50c4d89e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80 </image>

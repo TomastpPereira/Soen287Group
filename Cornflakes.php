@@ -103,6 +103,6 @@
 </div>
 </body>
 
-<script>price = 9.29;</script>
+<script>price = 4.99;</script>
 <script type="text/javascript" src="Button_Scripting.js"> </script>
 </html>

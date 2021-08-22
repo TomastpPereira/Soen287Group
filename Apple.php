@@ -77,7 +77,7 @@
                     $theproduct = $xml->product[1];
 
                     echo("<table id=\"table\">
-                        <tr>
+                        <tr>s
                             <td> Weight:</td>
                             <td> $theproduct->weight </td>
                         </tr>
@@ -91,11 +91,8 @@
                         </tr>
                     </table>")
                 ?>
-
-
             </div>
         </div>
-
     </div>
 
     <div class="footer">
@@ -107,7 +104,6 @@
 </div>
 
 </body>
-
 
 <script>var price = 0.99;</script>
 <script type="text/javascript" src="Button_Scripting.js"> </script>
