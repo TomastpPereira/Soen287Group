@@ -80,10 +80,10 @@ foreach ($xml as $value) {
         </div>
         <div class=\"inner-div\">
             <div class=\"inner-buttons\">
-                <button class=\"edit-order\" type=\"submit\" onclick=\"href=\"P11_Edit_Order_List.php?deleteOrder=". $order->id."\">
+                <button class=\"edit-order\" type=\"submit\" onclick=window.location.href=\"P12_Edit_an_Order_Profile.php?editOrder=". $order->id."\">
                     <strong>Edit Order</strong></button>
                 <div class=\"cart-buttons\" class=\"add - delete\">
-                    <button class=\"delete-order\" type=\"submit\" onclick=\"show()\"><strong>Delete</strong></button>
+                    <button class=\"delete-order\" type=\"submit\" onclick=window.location.href=\"P11_Edit_Order_List.php?deleteOrder=". $order->id."\"><strong>Delete</strong></button>
                 </div>
             </div>
         </div>

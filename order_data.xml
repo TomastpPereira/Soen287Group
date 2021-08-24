@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding='UTF-8' standalone="yes"?>
-
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <orders>
+
     <order>
         <id>0</id>
         <product>
-            <key>Banana</key><value>3</value>
+            <key>Bananas</key><value>1</value>
         </product>
         <product>
-            <key>Apple</key><value>2</value>
+            <key>Apple</key><value>3</value>
         </product>
         <product>
-            <key>Grapes</key><value>1</value>
+            <key>Grapes</key><value>5</value>
         </product>
     </order>
 
     <order>
         <id>1</id>
+        <product>
+            <key>Doritos</key><value>1</value>
+        </product>
+        <product>
+            <key>Meat</key><value>3</value>
+        </product>
+    </order>
+
+    <order>
+        <id>2</id>
         <product>
             <key>Doritos</key><value>1</value>
         </product>
