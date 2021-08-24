@@ -16,6 +16,21 @@
 $xml = simplexml_load_file("order_data.xml") or die("Error: Cannot create object");
 $orderNum = 0;
 
+if (isset($_GET['deleteOrder'])) {
+
+    $value = $_GET['deleteOrder'];
+
+    for ($i = 0; $i < $xml->count(); $i++) {
+
+        if ($xml->order[$i]->id == $value) {
+            unset($xml->order[$i]);
+            break;
+        }
+    }
+
+    file_put_contents("order_data.xml", $xml->saveXML());
+}
+
 foreach ($xml as $value) {
 
     $orderNum++;
@@ -55,20 +70,20 @@ foreach ($xml as $value) {
     $xml = simplexml_load_file("order_data.xml") or die("Error: Cannot create object");
     $orderNum = 1;
 
-    foreach ($xml as $value) {
+    foreach ($xml as $order) {
 
-        echo("<div class=\"inner-rows\" id=\"firstRow\">
+        echo("<div class=\"inner-rows\" id=\"order" . "$orderNum" . "\">
         <div class=\"inner-rows-text\">
             <h3>Order #" . "$orderNum" . "</h3>
             <h3>Description: </h3> 
-            <p> " . showProducts($value) . "</p>
+            <p> " . showProducts($order) . "</p>
         </div>
         <div class=\"inner-div\">
             <div class=\"inner-buttons\">
-                <button class=\"edit-order\" type=\"submit\" onclick=\"location.href = 'P12_Edit_an_Order_Profile.html'\">
+                <button class=\"edit-order\" type=\"submit\" onclick=window.location.href=\"P12_Edit_an_Order_Profile.php?editOrder=". $order->id."\">
                     <strong>Edit Order</strong></button>
                 <div class=\"cart-buttons\" class=\"add - delete\">
-                    <button class=\"delete-order\" type=\"submit\" onclick=\"show()\"><strong>Delete</strong></button>
+                    <button class=\"delete-order\" type=\"submit\" onclick=window.location.href=\"P11_Edit_Order_List.php?deleteOrder=". $order->id."\"><strong>Delete</strong></button>
                 </div>
             </div>
         </div>
@@ -79,12 +94,13 @@ foreach ($xml as $value) {
         $orderNum++;
     }
 
-    function showProducts($products)
+
+    function showProducts($order)
     {
 
         $str = "";
 
-        foreach ($products as $product) {
+        foreach ($order->product as $product) {
             $str .= ($product->value . " " . $product->key . ", ");
         }
 
