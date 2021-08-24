@@ -77,7 +77,7 @@
                     $theproduct = $xml->product[1];
 
                     echo("<table id=\"table\">
-                        <tr>s
+                        <tr>
                             <td> Weight:</td>
                             <td> $theproduct->weight </td>
                         </tr>

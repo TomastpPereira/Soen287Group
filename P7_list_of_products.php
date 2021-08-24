@@ -36,42 +36,54 @@
 
 <a href="P8_Edit_A_Product.html" class="button" style="width: 10%; margin-left: 50px; margin-top: 30px;"> Add!</a>
 
-<div style="padding: 24px 24px 24px 24px">
-  <div style="padding: 24px 24px 24px 24px;
-          background-color: lightgoldenrodyellow;
-          border-radius: 50px">
 
-    <h1> Doritos Wasabi</h1>
-    <h2> Chips</h2>
+<?php
+  $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
 
-    <img src="https://images.unsplash.com/photo-1600952841320-db92ec4047ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto"
-         width="30%" style="display: block; margin-left: auto; margin-right: auto" alt="Doritos Wasabi"/>
+  foreach ($xml->product as $product){
 
-    <p>
-      Enjoy the sweet and spicy intensity of Doritos Wasabi!
-    </p>
+    echo("
+      <div style=\"padding: 24px 24px 24px 24px\">
+        <div style=\"padding: 24px 24px 24px 24px; background-color: lightgoldenrodyellow; border-radius: 50px\">
 
-    <table>
-      <tr>
-        <td> Weight:</td>
-        <td> 40g</td>
-      </tr>
-      <tr>
-        <td> Price:</td>
-        <td> 3.99$</td>
-      </tr>
-      <tr>
-        <td> Calories:</td>
-        <td> 303 Cal</td>
-      </tr>
-    </table>
-    <br>
-    <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
-    <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
-  </div>
-</div>
+          <h1> $product->name </h1>
+          <h2> $product->aisle</h2>
 
-<div style="padding: 24px 24px 24px 24px">
+          <img src=$product->image
+          width=\"30%\" style=\"display: block; margin-left: auto; margin-right: auto\">
+
+          <p>
+            $product->description
+          </p>
+
+          <table id=\"table\">
+            <tr>
+              <td> Weight:</td>
+              <td> $product->weight </td>
+            </tr>
+            <tr>
+              <td> Price:</td>
+              <td id=\"unit_Cost\"> $product->price</td>
+            </tr>
+            <tr>
+              <td> Calories:</td>
+              <td> $product->calories</td>
+            </tr>
+          </table>
+          <br>
+          <button onclick=\"deleteProductAlert()\"style=\"margin-left: auto; min-width: 85px\">Delete</button>
+          <a href=\"P8_Edit_A_Product.html?id=$product->productID\" class=\"button\" style=\"margin-left: auto; min-width: 85px\"> Edit!</a>
+        </div>
+      </div>
+    ");
+
+
+  }
+?>
+
+
+
+<!-- <div style="padding: 24px 24px 24px 24px">
     <div style="padding: 24px 24px 24px 24px;
           background-color: lightgoldenrodyellow;
           border-radius: 50px">
@@ -180,7 +192,7 @@
 
     </div>
   </div>
-</div>
+</div> -->
 
 
 <div class="footer" style="position: relative; padding: 0; margin: 0;">

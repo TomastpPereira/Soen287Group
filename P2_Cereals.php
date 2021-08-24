@@ -33,6 +33,28 @@
 </div>
 
 <div class="aisle-box">
+
+    <?php
+        $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+
+        foreach ($xml->product as $product){
+
+            if ($product->aisle == Cereal){}
+                echo("
+                    <div class=\"aisle-content\">
+                        <a href="FrootLoops.php"> 
+                            <img src="images/frootloops.jpg">
+                            <h2> Froot Loops </h2> 
+                            <p> Cost: $6.99 each </p> 
+                        </a>    
+                    </div>
+                ");
+            }
+            else
+                continue;
+        }
+    ?>
+
     <div class="aisle-content">
         <a href="FrootLoops.php"> 
             <img src="images/frootloops.jpg">
