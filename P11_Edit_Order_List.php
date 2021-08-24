@@ -48,20 +48,20 @@ foreach ($xml as $value) {
 
 <div class="outer-rec2" id="outerRec">
 
-<!--    This part is to print html code repeatedly for each order.-->
+    <!--    This part is to print html code repeatedly for each order.-->
 
     <?php
 
     $xml = simplexml_load_file("order_data.xml") or die("Error: Cannot create object");
     $orderNum = 1;
 
-    foreach ($xml as $value) {
+    foreach ($xml as $order) {
 
-        echo("<div class=\"inner-rows\" id=\"firstRow\">
+        echo("<div class=\"inner-rows\" id=\"order" . "$orderNum" . "\">
         <div class=\"inner-rows-text\">
             <h3>Order #" . "$orderNum" . "</h3>
             <h3>Description: </h3> 
-            <p> " . showProducts($value) . "</p>
+            <p> " . showProducts($order) . "</p>
         </div>
         <div class=\"inner-div\">
             <div class=\"inner-buttons\">
@@ -98,7 +98,7 @@ foreach ($xml as $value) {
 
     ?>
 
-<!--    This is the old way we did the order list. This code was copy pasted a few times.-->
+    <!--    This is the old way we did the order list. This code was copy pasted a few times.-->
 
     <!--    <div class="inner-rows" id="firstRow">-->
     <!--        <div class="inner-rows-text">-->
