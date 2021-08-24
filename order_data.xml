@@ -4,7 +4,7 @@
     <order>
         <id>0</id>
         <product>
-            <key>Bananas</key><value>1</value>
+            <key>Banana</key><value>1</value>
         </product>
         <product>
             <key>Apple</key><value>3</value>
@@ -30,7 +30,7 @@
             <key>Doritos</key><value>1</value>
         </product>
         <product>
-            <key>Meat</key><value>3</value>
+            <key>Meat loaf</key><value>3</value>
         </product>
     </order>
 
