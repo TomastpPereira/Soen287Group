@@ -15,7 +15,7 @@ if (isset($_POST['login'])){
 			setcookie("firstname", $user->firstname, time() + 86400, "/");
 			setcookie("lastname", $user->lastname, time() + 86400, "/");
 			if ($user->ID == 0){
-				header('Location: P9_Edit_User_List.php');
+				header('Location: index.php');
 			} else {
 				header('Location: P5_Login.php');
 			}

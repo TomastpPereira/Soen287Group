@@ -9,10 +9,9 @@
             <a href="P2_Cereals.php"> Cereals </a>
             <a href="P2_ChipsandCandy.php"> Chips and Candy </a>
             <a href="P2_Meat.php"> Meat </a>
-            <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
         </div>
     </div>
-    <a href="P4_ShoppingCart.html"> Shopping Cart </a>
+    <a href="P4_ShoppingCart.php"> Shopping Cart </a>
     <?php
     if (!isset($_COOKIE['firstname'])) {
         echo '<a href="P5_Login.php"> Login </a>
@@ -21,11 +20,10 @@
     ?>
     <?php
     if (isset($_COOKIE['firstname'])) {
+        echo ' <a href="logout.php"> Log Out </a>';
         if ($_COOKIE['ID'] == 0) {
-            echo ' <a href="logout.php"> Log Out </a>';
-            echo ' <a href="P1.5_HomePage_Admin.html"> Backstore Pages </a>';
-        } else {
-            echo ' <a href="logout.php"> Log Out </a>';
+
+            echo ' <a href="P1.5_HomePage_Admin.php"> Backstore Pages </a>';
         }
     }
     ?>
