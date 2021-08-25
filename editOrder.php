@@ -1,3 +1,5 @@
+<?php include('admin_Check.php'); ?>
+
 <?php
 
 $xmlProduct = simplexml_load_file("product_data.xml");
