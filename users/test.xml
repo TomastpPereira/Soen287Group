@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<main>
+<amount>3</amount>
+  <userlist>
+   <user>
+        <ID>0</ID>
+        <password>21232f297a57a5a743894a0e4a801fc3</password>
+        <email>admin@admin.com</email>
+        <firstname>Admin</firstname>
+        <lastname>Account</lastname> 
+        <isadmin>true</isadmin>
+    </user>
+    <user>  
+        <ID>1</ID>
+        <password>4a7d1ed414474e4033ac29ccb8653d9b</password>
+        <email>trudeaujr@LPC.com</email>
+        <firstname>Justin</firstname>
+        <lastname>Trudeau</lastname>
+        <isadmin>false</isadmin>
+    </user>
+    <user>
+        <ID>5</ID>
+        <password>202cb962ac59075b964b07152d234b70</password>
+        <email>test@test.com</email>
+        <firstname>Joe</firstname>
+        <lastname>Roger</lastname>
+        <isadmin>fasle</isadmin>
+    </user>
+  </userlist>
+
+<!-- </userlist> if deleted during testing--> 
+</main>
