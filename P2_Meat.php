@@ -32,7 +32,31 @@
 </div>
 <!-- navbar end -->
 <div class="aisle-box">
-    <div class="aisle-content">
+
+    <?php
+        $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+
+        foreach ($xml->product as $product){
+
+            if ($product->aisle == "Meat"){
+                echo("
+                    <div class=\"aisle-content\" style=\"margin-top: 20px;\">
+                        <a href=$product->link> 
+                            <img src=$product->image>
+                            <h2> $product->name </h2> 
+                            <p> Cost: $product->price </p> 
+                        </a>    
+                    </div>
+                ");
+            } else {
+                continue;
+            }
+        }
+    ?>
+
+
+
+    <!-- <div class="aisle-content">
        <a href = "P3_Beef_Round_Chuck.php" /> <img src="images/beef-round-chuck.jpg" alt="beef round chuck"> 
            <h3>Beef Round Chuck</h3>
            <p>Price: $23.99/kg</p>
@@ -43,9 +67,9 @@
            <h3>Beef Top Round</h3>
            <p>Price: $32.99/kg</p>
        </a> 
-    </div>
+    </div> -->
 </div>
-<div class="aisle-box">
+<!-- <div class="aisle-box">
     <div class="aisle-content">
        <a href = "P3_Minced_Beef.php" /> <img src="images/minced-beef.jpg" alt="minced beef">
            <h3>Minced Beef</h3>
@@ -72,7 +96,7 @@
            <p>Price: $13.99/kg</p>
        </a>   
     </div>
-</div>
+</div> -->
 
 <!-- footer start-->
 <div class="footer">

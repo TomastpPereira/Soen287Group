@@ -1,6 +1,9 @@
+<?php include('admin_Check.php'); ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <title> Edit An Order Profile </title>
     <link rel="stylesheet type" type="text/css" href="P12_Style.css">
@@ -13,7 +16,7 @@
             border: white;
             border-radius: 4px;
             height: 30px;
-            width: 150px;
+            /*width: 150px;*/
             font-family: Arial;
             font-size: 16px;
         }
@@ -22,15 +25,7 @@
 
 <body style="background-color: white">
 
-<div class="navbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="P7_list_of_products.html"> Product List </a>
-    <a href="P8_Edit_A_Product.html"> Edit Product </a>
-    <a href="P9_Edit_User_List.html"> User List </a>
-    <a href="P10_Edit_User.html"> Edit User </a>
-    <a href="P11_Edit_Order_List.html"> Order List </a>
-    <a href="P12_Edit_an_Order_Profile.html"> Edit Order </a>
-</div>
+<?php include('navbar.php'); ?>
 
 <div class="container" id="banner">
     <h1> <?php if(isset($_GET['editOrder'])) echo "Order ID:". $_GET['editOrder']; else echo "NEW ORDER";?></h1>
@@ -39,7 +34,7 @@
 
 <div style="background-color: white; margin-top: 20px;">
 
-    <button onclick="window.location.href='P11_Edit_Order_List.php'" style="margin: 0px 50px;">Back</button>
+    <button onclick="window.location.href='P11_Edit_Order_List.php'" style="margin: 0px 50px; width: 150px;">Back</button>
 
     <?php
 
@@ -151,7 +146,7 @@
 
 </div>
 
-<button type="submit" value="Submit" style="background-color: green; margin: 10px 50px;"> Save Changes </button>
+<button type="submit" value="Submit" style="background-color: green; margin: 10px 50px; width: 150px;"> Save Changes </button>
 </form>
 
 <div class="footer">
