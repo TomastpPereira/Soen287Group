@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order List</title>
     <link rel="stylesheet" href="./Styles_P4_P11.css">
+    <style>
+        *.inner-rows-text {
+            width: 49%;
+        }
+    </style>
 </head>
 <body>
 
