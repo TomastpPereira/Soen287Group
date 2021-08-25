@@ -9,8 +9,7 @@
 
     <body>
 
-        <?php include('admin_Check.php'); ?>
-        <?php include('navbar.php'); ?>
+    <?php include('admin_Navbar.php'); ?>
 
         <div style="text-align: center">
         <h2> Editing A Product </h2>

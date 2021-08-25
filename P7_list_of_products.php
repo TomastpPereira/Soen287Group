@@ -38,8 +38,7 @@
 
   ?>
 
-  <?php include('admin_Check.php'); ?>
-  <?php include('navbar.php'); ?>
+  <?php include('admin_Navbar.php'); ?>
 
   <!-- <div class="navbar">
     <a class="active" href="index.html">Home</a>
@@ -58,7 +57,7 @@
 </div>
 
 
-<a href="P8_Edit_A_Product.html" class="button" style="width: 10%; margin-left: 50px; margin-top: 30px;"> Add!</a>
+<a href="P8_Edit_A_Product.php" class="button" style="width: 10%; margin-left: 50px; margin-top: 30px;"> Add!</a>
 
 <?php
   $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");

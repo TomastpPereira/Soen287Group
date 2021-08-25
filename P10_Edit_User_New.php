@@ -128,15 +128,7 @@ if(isset($_POST['add'])){
 </head>
 <body>
 	<!-- nav bar -->
-	<div class="navbar">
-		<a class="active" href="index.html">Home</a>
-		<a href="P7_list_of_products.html"> Product List </a>
-		<a href="P8_Edit_A_Product.html"> Edit Product </a>
-		<a href="P9_Edit_User_List.html"> User List </a>
-		<a href="P10_Edit_User.html"> Edit User </a>
-		<a href="P11_Edit_Order_List.php"> Order List </a>
-		<a href="P12_Edit_an_Order_Profile.html"> Edit Order </a>
-	</div>
+    <?php include('admin_Navbar.php'); ?>
 <!-- main item -->
 	<h1><strong>Edit Profile</strong></h1>
 	<div class="edit-profile-box">

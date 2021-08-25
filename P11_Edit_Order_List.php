@@ -1,5 +1,3 @@
-<?php include('admin_Check.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +45,7 @@ foreach ($xml as $value) {
 
 <!--Navbar-->
 
-<?php include('navbar.php'); ?>
+<?php include('admin_Navbar.php'); ?>
 
 <div class="div-head">
     <div class="title">
