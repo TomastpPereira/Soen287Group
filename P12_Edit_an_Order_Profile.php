@@ -66,7 +66,7 @@
         
         <div style=\"text-align:center\">
         <label for=\"quantity\"> Quantity: </label>
-        <input type='text' name=\"quantity\" id=\"quantity\" placeholder='0' style='margin-left: 5px; width: 10px'>
+        <input type='text' name=\"quantity\" id=\"quantity\" value='0' style='margin-left: 5px; width: 10px'>
         </div>
     </div>
 ");
@@ -86,7 +86,7 @@
         
         <div style=\"text-align:center\">
         <label for=\"quantity\"> Quantity:</label>
-        <input type='text' name=\"quantity\" id=\"quantity\" placeholder=\"". getQty($product->name) ."\" style='margin-left: 5px; width: 10px'>
+        <input type='text' name=\"quantity\" id=\"quantity\" value=\"". getQty($product->name) ."\" placeholder=\"\" style='margin-left: 5px; width: 10px'>
         </div>
     </div>
 ");
