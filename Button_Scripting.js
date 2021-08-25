@@ -22,10 +22,27 @@ else {
     updateHtml();
 }
 
-// Alert on add to cart button
-
+// Alert on add to cart button + adding product info to lcl sto
 addToCartBtn.addEventListener('click', function () {
     alert("Item added to cart!");
+    const product = {
+        item: document.getElementById("item").innerText,
+        quantity: parseFloat(document.getElementById("qty").innerText),
+        price: parseFloat(document.getElementById("subtotal").innerText.replace("$","")),
+        image: document.getElementById("picture").getAttribute('src')
+    }
+
+    var new_data = product;
+    
+    if(localStorage.getItem("data") == null){
+        localStorage.setItem("data", "[]");
+    }
+
+    var old_data = JSON.parse(localStorage.getItem("data"));
+    old_data.push(new_data);
+
+    localStorage.setItem("data", JSON.stringify(old_data));
+
 });
 
 // Save Order Button Alert

@@ -1,169 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopping Cart</title>
-        <link rel="stylesheet" href="./Styles_P4_P11.css">
-        <script type="text/javascript" src="/p4_ShopppingCart.js"></script>
-    </head>
-    <body>
-        <div class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn"> 
-                    Aisles
-                </button>
-                <div class="dropdown-content">
-                    <a href="P2_Fruits.html"> Fruits & Vegetables</a>
-                    <a href="P2_Cereals.html"> Cereals </a>
-                    <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
-                    <a href="P2_Meat.html"> Meat </a>
-                    <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
-                </div>
-            </div>
-            <a href="P4_ShoppingCart.html"> Shopping Cart </a>
-            <a href="P5_Login.html"> Login </a>
-            <a href="P6_SignUp.html"> Sign Up</a>
-        </div>
-        
-        <div>
-            <h1 style="margin-left: 2%; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Cart Items</h1>
-            
-            <div class="top-form">
-                
-                <button type="submit" class="shop" onclick="location.href='/P2_Fruits.html'">Continue Shopping</button>
-                
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./Styles_P4_P11.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Aisles
+            </button>
+            <div class="dropdown-content">
+                <a href="P2_Fruits.html"> Fruits & Vegetables</a>
+                <a href="P2_Cereals.html"> Cereals </a>
+                <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
+                <a href="P2_Meat.html"> Meat </a>
+                <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
             </div>
         </div>
-        <br>
-        
-        <div class="payment">
-        
-            <h2 style="text-align: center;">Summary of order:</h2>
+        <a href="P4_ShoppingCart.html"> Shopping Cart </a>
+        <a href="P5_Login.html"> Login </a>
+        <a href="P6_SignUp.html"> Sign Up</a>
+    </div>
 
+    <div>
+        <h1 style="margin-left: 2%; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Cart Items</h1>
 
-            <div class="prices">
-                <h3 class="sub-prices" style="display: inline;" id="items">0</h3>
-                <hr>
-                <h3 class="sub-prices" id="subtotal">0.00$</h3>
-                <hr>
-                <h3 class="sub-prices" id="gst">0.00$</h3>
-                <h3 class="sub-prices" id="qst">0.00$</h3>
-                <hr>
-                <h3 class="sub-prices" id="total">0.00$</h3>
-                
-            </div>
+        <div class="top-form">
 
-                
-            <div class="Summary">
-                <h3 class="summary" style="display: inline;">Total Items: </h3>
-                <hr>
-                <h3 class="summary">Subtotal:</h3>
-                <hr>
-                <h3 class="summary">GST: </h3>
-                <h3 class="summary">QST: </h3>
-                <hr>
-                <h3 class="summary">Total:</h3>
-                
-            </div>
-                
-            
-        
+            <button type="submit" class="shop" onclick="location.href='/P2_Fruits.html'">Continue Shopping</button>
+
         </div>
-        
-        <div class="outer-rec">
-            <div class="row" id="row-banana">
-            
-                <div class="inner-text">
-                    
-                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-one"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.5" class="price-each" id="each-one"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-one"></h2>
-                   
-                    <button class="add" onclick="incrementQuantityBanana()"><strong>+ Add</strong></button>
-                    <button class="remove" onclick="decrementQuantityBanana()"><strong>- Less</strong></button>
-                    <br><br>
-                    <button class="delete" onclick="deleteBanana()"><strong>X Delete Item</strong></button>
-                    
-                </div>
-                
-                <img class="images" src="./images/banane.png" alt="banana" style="margin-top: 25px; margin-left: 50px;">
+    </div>
+    <br>
 
-            </div>
-        
-            <br>
-            
-            <div class="row" id="row-apple">
-                
-               <div class="inner-text">
-                    
-                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-two"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.4" class="price-each" id="each-two"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-two"></h2>
-                   
-                    <button class="add" onclick="incrementQuantityApple()"><strong>+ Add</strong></button>
-                    <button class="remove" onclick="decrementQuantityApple()"><strong>- Less</strong></button>
-                    <br><br>
-                    <button class="delete" onclick="deleteApple()"><strong>X Delete Item</strong></button>
+    <div class="payment">
 
-                </div>
-                
-                <img class="images" src="./images/apple.png" alt="apple" style="margin-top: 35px; margin-left: 50px;">
-                
-                
-            </div>
-            <br>
-            
-            <div class="row" id="row-orange">
-                
-                <div class="inner-text">
-                
-                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-three"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.6" class="price-each" id="each-three"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-three"></h2>
-                
-                    <button class="add" onclick="incrementQuantityOrange()"><strong>+ Add</strong></button>
-                    <button class="remove" onclick="decrementQuantityOrange()"><strong>- Less</strong></button>
-                    <br><br>
-                    <button class="delete" onclick="deleteOrange()"><strong>X Delete Item</strong></button>
-                
-                </div>
-                
-                <img class="images" src="./images/orange.png" alt="orange" style="margin-top: 35px; margin-left: 60px;">
-                
-                
-            </div>
-            <br>
-           
-            <div class="row" id="row-peach">
-                
-                <div class="inner-text">
-                
-                    <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in" id="price-four"> </h2>
-                    <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="0.8" class="price-each" id="each-four"></h2>
-                    <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="0" class="qty" id="qty-four"></h2>
-                
-                    <button class="add" onclick="incrementQuantityPeach()"><strong>+ Add</strong></button>
-                    <button class="remove" onclick="decrementQuantityPeach()"><strong>- Less</strong></button>
-                    <br><br>
-                    <button class="delete" onclick="deletePeach()"><strong>X Delete Item</strong></button>
-                
-                </div>
-                
-                <img class="images" src="./images/peach.png" alt="peach" style="margin-top: 35px; margin-left: 50px;">
-                
-                
-            </div>
-        
+        <h2 style="text-align: center;">Summary of order:</h2>
+
+
+        <div class="prices">
+            <h3 class="sub-prices" style="display: inline;" id="items">0</h3>
+            <hr>
+            <h3 class="sub-prices" id="subtotal">0.00$</h3>
+            <hr>
+            <h3 class="sub-prices" id="gst">0.00$</h3>
+            <h3 class="sub-prices" id="qst">0.00$</h3>
+            <hr>
+            <h3 class="sub-prices" id="total">0.00$</h3>
+
         </div>
-           
-        <div class="footer">
-            <p style="text-align: center;"> Our Info </p>
-            <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers. </p>
-            <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
+
+
+        <div class="Summary">
+            <h3 class="summary" style="display: inline;">Total Items: </h3>
+            <hr>
+            <h3 class="summary">Subtotal:</h3>
+            <hr>
+            <h3 class="summary">GST: </h3>
+            <h3 class="summary">QST: </h3>
+            <hr>
+            <h3 class="summary">Total:</h3>
+
         </div>
-        
-    </body>
+
+
+
+    </div>
+
+    <div class="outer-rec">
+
+    </div>
+
+    <div class="footer">
+        <p style="text-align: center;"> Our Info </p>
+        <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers.
+        </p>
+        <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
+    </div>
+    <script type="text/javascript" src="./p4_ShopppingCart.js"></script>
+</body>
+
+
 </html>
