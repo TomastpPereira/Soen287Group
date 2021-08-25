@@ -16,7 +16,7 @@
             border: white;
             border-radius: 4px;
             height: 30px;
-            width: 150px;
+            /*width: 150px;*/
             font-family: Arial;
             font-size: 16px;
         }
@@ -34,7 +34,7 @@
 
 <div style="background-color: white; margin-top: 20px;">
 
-    <button onclick="window.location.href='P11_Edit_Order_List.php'" style="margin: 0px 50px;">Back</button>
+    <button onclick="window.location.href='P11_Edit_Order_List.php'" style="margin: 0px 50px; width: 150px;">Back</button>
 
     <?php
 
@@ -146,7 +146,7 @@
 
 </div>
 
-<button type="submit" value="Submit" style="background-color: green; margin: 10px 50px;"> Save Changes </button>
+<button type="submit" value="Submit" style="background-color: green; margin: 10px 50px; width: 150px;"> Save Changes </button>
 </form>
 
 <div class="footer">
