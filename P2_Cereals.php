@@ -39,23 +39,23 @@
 
         foreach ($xml->product as $product){
 
-            if ($product->aisle == Cereal){}
+            if ($product->aisle == "Cereal"){
                 echo("
-                    <div class=\"aisle-content\">
-                        <a href="FrootLoops.php"> 
-                            <img src="images/frootloops.jpg">
-                            <h2> Froot Loops </h2> 
-                            <p> Cost: $6.99 each </p> 
+                    <div class=\"aisle-content\" style=\"margin-top: 20px;\">
+                        <a href=$product->link> 
+                            <img src=$product->image>
+                            <h2> $product->name </h2> 
+                            <p> Cost: $product->price </p> 
                         </a>    
                     </div>
                 ");
-            }
-            else
+            } else {
                 continue;
+            }
         }
     ?>
 
-    <div class="aisle-content">
+    <!-- <div class="aisle-content">
         <a href="FrootLoops.php"> 
             <img src="images/frootloops.jpg">
             <h2> Froot Loops </h2> 
@@ -68,9 +68,9 @@
             <h2> Cheerios </h2>
             <p> Cost: $4.99 each  </p>
         </a> 
-    </div>
+    </div> -->
 </div>
-<div class="aisle-box">
+<!-- <div class="aisle-box">
     <div class="aisle-content"> 
         <a href="Cornflakes.php">
             <img src="https://images.unsplash.com/photo-1574156814151-ed649f815f4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80">
@@ -85,7 +85,7 @@
             <p> Cost: $4.29 each  </p>
         </a>
     </div>
-</div>
+</div> -->
 
 <div class="footer">
     <p style="text-align: center;"> Our Info </p>
