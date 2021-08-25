@@ -17,6 +17,29 @@
 </head>
 
 <body style="padding-bottom: 0; ">
+
+  <?php
+    $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+
+    if (isset($_GET['deleteProduct'])) {
+
+      $value = $_GET['deleteProduct'];
+
+      for ($i = 0; $i < $xml->count(); $i++) {
+
+          if ($xml->product[$i]->productID == $value) {
+              unset($xml->product[$i]);
+              break;
+          }
+      }
+
+      file_put_contents("product_data.xml", $xml->saveXML());
+    }
+
+  ?>
+
+
+
   <div class="navbar">
     <a class="active" href="index.html">Home</a>
     <a href="P7_list_of_products.html"> Product List </a>
@@ -36,9 +59,20 @@
 
 <a href="P8_Edit_A_Product.html" class="button" style="width: 10%; margin-left: 50px; margin-top: 30px;"> Add!</a>
 
-
 <?php
   $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+
+  function deleteProduct($id){
+    $xml = simplexml_load_file("product_data.xml") or die("Error: Cannot create object");
+    for($i = 0, $length= count($xml->product); $i < $length; $i++){
+      if ($xml->product[$i]->productID == $id){
+        unset($xml->product[$i]);
+        break;
+      }
+    }
+    $xml->asXML("product_data.xml");
+  }
+
 
   foreach ($xml->product as $product){
 
@@ -71,7 +105,7 @@
             </tr>
           </table>
           <br>
-          <button onclick=\"deleteProductAlert()\"style=\"margin-left: auto; min-width: 85px\">Delete</button>
+          <button class=\"delete-order\" type=\"submit\" onclick=window.location.href=\"P7_list_of_products.php?deleteProduct=". $product->productID."\" style=\"margin-left: auto; min-width: 85px\"> Delete </button>
           <a href=\"P8_Edit_A_Product.html?id=$product->productID\" class=\"button\" style=\"margin-left: auto; min-width: 85px\"> Edit!</a>
         </div>
       </div>
@@ -80,119 +114,6 @@
 
   }
 ?>
-
-
-
-<!-- <div style="padding: 24px 24px 24px 24px">
-    <div style="padding: 24px 24px 24px 24px;
-          background-color: lightgoldenrodyellow;
-          border-radius: 50px">
-
-        <h1> Crunchy Cheetos </h1>
-        <h2> Chips </h2>
-
-        <img src="https://images.unsplash.com/photo-1581533940608-d2973792f542?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-             width="30%" style="display: block; margin-left: auto; margin-right: auto" alt="Bag of Crunchy Doritos"/>
-
-        <p>
-            Enjoy the cheesy crunch of Crunchy Cheetos!
-        </p>
-
-        <br>
-        <table>
-            <tr>
-                <td> Weight:</td>
-                <td> 240g</td>
-            </tr>
-            <tr>
-                <td> Price:</td>
-                <td> 5.99$</td>
-            </tr>
-            <tr>
-                <td> Calories:</td>
-                <td> 160 Cal</td>
-            </tr>
-        </table>
-        <br>
-        <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
-        <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
-        <br><br>
-    </div>
-</div>
-
-<div style="padding: 24px 24px 24px 24px">
-  <div style="padding: 24px 24px 24px 24px;
-          background-color: lightgoldenrodyellow;
-          border-radius: 50px">
-
-    <h1> Runts </h1>
-    <h2> Candy </h2>
-
-    <img src="https://images.unsplash.com/photo-1600359746315-119f1360d663?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNhbmR5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-         width="30%" style="display: block; margin-left: auto; margin-right: auto" alt="Runts"/>
-
-    <p>
-        Enjoy the sweet taste of Runts!
-    </p>
-
-    <table>
-      <tr>
-        <td> Weight:</td>
-        <td> 142g</td>
-      </tr>
-      <tr>
-        <td> Price:</td>
-        <td> 2.99$</td>
-      </tr>
-      <tr>
-        <td> Calories:</td>
-        <td> 60 Cal</td>
-      </tr>
-    </table>
-    <br>
-    <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
-    <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
-
-  </div>
-</div>
-
-<div style="padding: 24px 24px 24px 24px">
-  <div style="padding: 24px 24px 24px 24px;
-          background-color: lightgoldenrodyellow;
-          border-radius: 50px">
-
-    <h1> Skittles </h1>
-    <h2> Candy </h2>
-
-    <div>
-      <img src="https://images.unsplash.com/photo-1600359738432-965e50c4d89e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-           width="30%" style="display: block; margin-left: auto; margin-right: auto" alt="Skittles"/>
-      <p class="Text block">
-        Enjoy the sweet taste of the rainbow Skittles!
-      </p>
-
-      <br>
-      <table>
-        <tr>
-          <td> Weight:</td>
-          <td> 56g</td>
-        </tr>
-        <tr>
-          <td> Price:</td>
-          <td> 2.99$</td>
-        </tr>
-        <tr>
-          <td> Calories:</td>
-          <td> 160 Cal</td>
-        </tr>
-      </table>
-      <br>
-      <button onclick="deleteProductAlert()"style="margin-left: auto; min-width: 85px">Delete</button>
-      <a href="P8_Edit_A_Product.html" class="button" style="margin-left: auto; min-width: 85px"> Edit!</a>
-
-    </div>
-  </div>
-</div> -->
 
 
 <div class="footer" style="position: relative; padding: 0; margin: 0;">
