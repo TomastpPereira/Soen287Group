@@ -8,22 +8,16 @@
     </head>
 
     <body>
-        <div class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <a href="P7_list_of_products.html"> Product List </a>
-            <a href="P8_Edit_A_Product.html"> Edit Product </a>
-            <a href="P9_Edit_User_List.html"> User List </a>
-            <a href="P10_Edit_User.html"> Edit User </a>
-            <a href="P11_Edit_Order_List.html"> Order List </a>
-            <a href="P12_Edit_an_Order_Profile.html"> Edit Order </a>
-        </div>
+
+        <?php include('admin_Check.php'); ?>
+        <?php include('navbar.php'); ?>
 
         <div style="text-align: center">
         <h2> Editing A Product </h2>
         </div>
         <div class="edit-option-box" style="padding: 20px 70px 20px 20px">
             <h3> Input Fields to Be Edited: </h3>
-            <form action="P8_Edit_Product.php" method="POST">
+            <form action="P8_Edit_Product_Function.php" method="POST">
                 <div style="font-size: 14px">
                 <label for="PName"> Product Name </label>
                 <input type="text" id="PName" name="PName" value=""><br><br>

@@ -38,9 +38,10 @@
 
   ?>
 
+  <?php include('admin_Check.php'); ?>
+  <?php include('navbar.php'); ?>
 
-
-  <div class="navbar">
+  <!-- <div class="navbar">
     <a class="active" href="index.html">Home</a>
     <a href="P7_list_of_products.html"> Product List </a>
     <a href="P8_Edit_A_Product.html"> Edit Product </a>
@@ -48,7 +49,7 @@
     <a href="P10_Edit_User.html"> Edit User </a>
     <a href="P11_Edit_Order_List.html"> Order List </a>
     <a href="P12_Edit_an_Order_Profile.html"> Edit Order </a>
-</div>
+  </div> -->
 
 
 <div class="container" id="banner">
@@ -106,7 +107,7 @@
           </table>
           <br>
           <button class=\"delete-order\" type=\"submit\" onclick=window.location.href=\"P7_list_of_products.php?deleteProduct=". $product->productID."\" style=\"margin-left: auto; min-width: 85px\"> Delete </button>
-          <a href=\"P8_Edit_A_Product.html?id=$product->productID\" class=\"button\" style=\"margin-left: auto; min-width: 85px\"> Edit!</a>
+          <a href=\"P8_Edit_A_Product.php?id=$product->productID\" class=\"button\" style=\"margin-left: auto; min-width: 85px\"> Edit!</a>
         </div>
       </div>
     ");
