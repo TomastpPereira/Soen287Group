@@ -7,24 +7,7 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn"> 
-                Aisles
-            </button>
-            <div class="dropdown-content">
-                <a href="P2_Fruits.html"> Fruits & Vegetables</a>
-                <a href="P2_Cereals.html"> Cereals </a>
-                <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
-                <a href="P2_Meat.html"> Meat </a>
-                <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
-            </div>
-        </div>
-        <a href="P4_ShoppingCart.html"> Shopping Cart </a>
-        <a href="P5_Login.html"> Login </a>
-        <a href="P6_SignUp.html"> Sign Up</a>
-    </div>
+<?php include('navbar.php'); ?>
 
 <div class="container" id="banner">
     <h1> Chips and Candy </h1>

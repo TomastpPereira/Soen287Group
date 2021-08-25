@@ -7,25 +7,7 @@
     </head>
 
     <body style="background-image:linear-gradient(rgba(0, 0, 0, 0.33),rgba(0, 0, 0, 0.33)), url('images/GroceryStore.jpg');">
-        <div class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn"> 
-                    Aisles
-                </button>
-                <div class="dropdown-content">
-                    <a href="P2_Fruits.php"> Fruits & Vegetables</a>
-                    <a href="P2_Cereals.php"> Cereals </a>
-                    <a href="P2_ChipsandCandy.php"> Chips and Candy </a>
-                    <a href="P2_Meat.php"> Meat </a>
-                    <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
-                </div>
-            </div>
-            <a href="P4_ShoppingCart.html"> Shopping Cart </a>
-            <a href="P5_Login.html"> Login </a>
-            <a href="P6_SignUp.html"> Sign Up</a>
-            <a href="P1.5_HomePage_Admin.html"> Backstore Pages </a>
-        </div>
+    <?php include('navbar.php'); ?>
 
         <div id="banner" style="text-shadow: 2px 2px #181717;">
             <h1> Welcome to Our Store </h1>
