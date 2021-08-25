@@ -55,7 +55,7 @@ foreach ($xml as $value) {
         <h1 class="title-h1">Our orders (<?php echo($orderNum) ?>)</h1>
     </div>
     <div class="Add">
-        <button class="add-order" type="submit" onclick="location.href='P7_list_of_products.html'"><strong>Add</strong>
+        <button class="add-order" type="submit" onclick="location.href='P12_Edit_an_Order_Profile.php'"><strong>Add</strong>
         </button>
     </div>
 </div>
@@ -113,27 +113,6 @@ foreach ($xml as $value) {
     }
 
     ?>
-
-<!--    This is the old way we did the order list. This code was copy pasted a few times.-->
-
-    <!--    <div class="inner-rows" id="firstRow">-->
-    <!--        <div class="inner-rows-text">-->
-    <!--            <h3>Order #1</h3>-->
-    <!--            <h3>Description: </h3>-->
-    <!--            <h3>Client: </h3>-->
-    <!--        </div>-->
-    <!--        <div class="inner-div">-->
-    <!--            <div class="inner-buttons">-->
-    <!--                <button class="edit-order" type="submit" onclick="location.href='P12_Edit_an_Order_Profile.html'">-->
-    <!--                    <strong>Edit Order</strong></button>-->
-    <!--                <div class="cart-buttons" class="add-delete">-->
-    <!--                    <button class="delete-order" type="submit" onclick="show()"><strong>Delete</strong></button>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!---->
-    <!--    </div>-->
-    <!--    <br>-->
 
 
 </div>

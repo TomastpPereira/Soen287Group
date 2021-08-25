@@ -33,7 +33,7 @@
 </div>
 
 <div class="container" id="banner">
-    <h1> Order ID: <?php if(isset($_GET['editOrder'])) echo $_GET['editOrder']; else echo "X";?></h1>
+    <h1> <?php if(isset($_GET['editOrder'])) echo "Order ID:". $_GET['editOrder']; else echo "NEW ORDER";?></h1>
 </div>
 
 
@@ -41,14 +41,42 @@
 
     <button onclick="window.location.href='P11_Edit_Order_List.php'" style="margin: 0px 50px;">Back</button>
 
-
-    <form>
-
     <?php
 
     $xmlProduct = simplexml_load_file("product_data.xml");
 
     $xmlOrder = simplexml_load_file("order_data.xml");
+
+    if(isset($_GET['editOrder'])) {
+
+        echo "<form action=\"editOrder.php?editOrder=".$_GET['editOrder']. "\" method = \"post\">";
+    } else {
+
+
+        // Create new ID
+
+        $arr = array();
+
+        for ($i = 0; $i < $xmlOrder->count(); $i++) {
+            $id = (int) $xmlOrder->order[$i]->id;
+            array_push($arr, $id);
+        }
+
+        sort($arr);
+
+        $newId = 0;
+
+        $matchCount = 0;
+
+        for ($i = 0; $i < count($arr); $i++){
+            if ($arr[$i] != $i) { $newId = $i; break;}
+            $matchCount++;
+        }
+        if($matchCount == $i) $newId = $i;
+        echo "<form action=\"editOrder.php?editOrder=". $newId . "\" method = \"post\">";
+    }
+
+
 
     foreach($xmlProduct as $product) {
 
@@ -66,7 +94,7 @@
         
         <div style=\"text-align:center\">
         <label for=\"quantity\"> Quantity: </label>
-        <input type='text' name=\"quantity\" id=\"quantity\" value='0' style='margin-left: 5px; width: 10px'>
+        <input type='text' name=\"qty".str_replace(' ', '', $product->name)."\" id=\"quantity\" value='0' style='margin-left: 5px; width: 10px'>
         </div>
     </div>
 ");
@@ -86,14 +114,12 @@
         
         <div style=\"text-align:center\">
         <label for=\"quantity\"> Quantity:</label>
-        <input type='text' name=\"quantity\" id=\"quantity\" value=\"". getQty($product->name) ."\" placeholder=\"\" style='margin-left: 5px; width: 10px'>
+        <input type='text' name=\"qty".$product->name."\" id=\"quantity\" value=\"". getQty($product->name) ."\" placeholder=\"\" style='margin-left: 5px; width: 10px'>
         </div>
     </div>
 ");
 
         }
-        
-
 
     }
 
@@ -122,11 +148,11 @@
     }
 
     ?>
-    </form>
+
 </div>
 
-<button type="submit" style="background-color: green; margin: 10px 50px;"> Save Changes </button>
-
+<button type="submit" value="Submit" style="background-color: green; margin: 10px 50px;"> Save Changes </button>
+</form>
 
 <div class="footer">
     <p style="text-align: center;"> Our Info </p>
