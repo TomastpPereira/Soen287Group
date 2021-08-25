@@ -8,10 +8,6 @@ if(isset($_POST['sign_up'])){
     $password = $_POST['password'];
     $c_password = $_POST['c_password'];
 
-    // if(file_exists('users/' . $email . '.xml')){
-    //     $errors[] = 'Account already exists';
-    // }
-    // No check if the user already exist *to implement*
     if ($firstname == ''){
       $errors[] = 'First Name is blank';
     }
@@ -48,24 +44,10 @@ if(isset($_POST['sign_up'])){
       header('Location: P5_Login.php');
       die;
     }
-
-    // Old code for seperate XML files (as it should be).
-    // if (count($errors) == 0){
-    //     $xml = new SimpleXMLElement('<user></user>');
-    //     $xml->addChild('password', md5($password));
-    //     $xml->addChild('email', $email);
-    //     $xml->addChild('firstname', $firstname);
-    //     $xml->addChild('lastname', $lastname);
-    //     $xml->asXML('users/' . $email . '.xml');
-    //     header('Location: P5_Login.php');
-    //     die;
-    // }
 }
 ?>
 
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <title> Sign Up Page </title>
@@ -73,37 +55,7 @@ if(isset($_POST['sign_up'])){
 </head>
 
 <body>
-  <div class="navbar">
-    <a class="active" href="index.html">Home</a>
-    <div class="dropdown">
-        <button class="dropbtn"> 
-            Aisles
-        </button>
-        <div class="dropdown-content">
-            <a href="P2_Fruits.html"> Fruits & Vegetables</a>
-            <a href="P2_Cereals.html"> Cereals </a>
-            <a href="P2_ChipsandCandy.html"> Chips and Candy </a>
-            <a href="P2_Meat.html"> Meat </a>
-            <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
-        </div>
-    </div>
-    <a href="P4_ShoppingCart.html"> Shopping Cart </a>
-
-
-    <?php 
-    if(!isset($_COOKIE['firstname'])){
-        echo'<a href="P5_Login.php"> Login </a>
-             <a href="P6_SignUp.php"> Sign Up </a>';} 
-   ?>
-    
-    <?php 
-    if(isset($_COOKIE['firstname'])){
-        echo' <a href="logout.php"> Log Out </a>';} 
-    ?>
-    <h3 style="color: white; margin-bottom: 0; float: right; margin-right: 20px;  <?php if(isset($_COOKIE['firstname'])){echo "display:block;";} else{echo "display:none;";}?>"> Welcome, <?= $_COOKIE["firstname"]; ?> </h3>
-</div>
-
- 
+<?php include('navbar.php'); ?> <!-- navbar --> 
 
 <?php
   if(count($errors) > 0){
@@ -114,7 +66,6 @@ if(isset($_POST['sign_up'])){
       echo '</ul>';
   }
 ?>
-
 
 <div class="sign-up-box" >
   <div class="top-text-div">
@@ -173,7 +124,7 @@ if(isset($_POST['sign_up'])){
         <input type="password" id="confirm-password" placeholder="Confirm Password" onkeyup='checkPassword()' name="c_password" required> <br><br>
       </div>
     </div>
-    <a href="#"><h5> Terms & Conditions</h5></a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><h5> Terms & Conditions</h5></a>
       <input type = checkbox id="checkbox" required> Agree to Terms & Conditions 
       <br>
       <br>

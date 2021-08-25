@@ -15,27 +15,15 @@ if (isset($_POST['login'])){
 			setcookie("firstname", $user->firstname, time() + 86400, "/");
 			setcookie("lastname", $user->lastname, time() + 86400, "/");
 			if ($user->ID == 0){
-				header('Location: P9_Edit_User_List.php');
+				header('Location: index.php');
 			} else {
-				header('Location: P5_Login.php');
+				header('Location: index.php');
 			}
 		}
 	  }
 	$error = true;
-    // if(file_exists('users/' . $email . '.xml')){
-    //     $xml = new SimpleXMLElement('users/' . $email . '.xml', 0, true);
-    //     if($password == $xml->password){
-    //         session_start();
-    //         $_SESSION['email'] = $email;
-    //         header('Location: P10_Edit_User_New.php'); // change to front store page or product list (read instructions) if it's an admin (need to check if admin) 
-    //         die;
-    //     }
-    // }  
 }
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html>
@@ -52,7 +40,7 @@ if (isset($_POST['login'])){
 	<div class="login-box">
 		<h1 id="intro">Welcome Back</h1>
 		<p>Please sign in to enjoy your member benefits</p>
-			<form action="" autocomplete="on" method="POST"> <!-- link to form page -->
+			<form action="" autocomplete="on" method="POST">
 				<div>
 					<label></label>
 					<input type="email" class="test" placeholder= "Email Address" name="email" required>
@@ -72,9 +60,9 @@ if (isset($_POST['login'])){
 				<br>
 			     <label></label>
 		      		<input type="checkbox" checked="checked" name="remember"> Remember me
-			    <p><a href= "#"> Forgot Password? </a></p>  <!-- replace # with forgot password page -->
+			    <p><a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Forgot Password? </a></p>
 			    <br style="line-height: 20px;">
-			    <p> New to Tomas' and friends? <a href= "P6_SignUp.html">Sign up now</a></p>  <!-- replace # with sign up page -->
+			    <p> New to Tomas' and friends? <a href= "P6_SignUp.html">Sign up now</a></p>  <!-- sign up page link -->
 			</form>
 	</div>
 <!-- footer -->
