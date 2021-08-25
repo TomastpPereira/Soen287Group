@@ -38,8 +38,7 @@
 
   ?>
 
-  <?php include('admin_Check.php'); ?>
-  <?php include('navbar.php'); ?>
+  <?php include('admin_Navbar.php'); ?>
 
   <!-- <div class="navbar">
     <a class="active" href="index.html">Home</a>

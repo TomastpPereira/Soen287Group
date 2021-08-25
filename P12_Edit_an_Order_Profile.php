@@ -1,5 +1,3 @@
-<?php include('admin_Check.php'); ?>
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -25,7 +23,7 @@
 
 <body style="background-color: white">
 
-<?php include('navbar.php'); ?>
+<?php include('admin_Navbar.php'); ?>
 
 <div class="container" id="banner">
     <h1> <?php if(isset($_GET['editOrder'])) echo "Order ID:". $_GET['editOrder']; else echo "NEW ORDER";?></h1>
