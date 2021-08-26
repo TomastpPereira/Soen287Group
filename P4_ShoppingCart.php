@@ -25,7 +25,7 @@
                 <!-- <a href="Emmanuel_copies/P2.html"> Fruit 2 </a> -->
             </div>
         </div>
-        <a href="P4_ShoppingCart.html"> Shopping Cart </a>
+        <a href="P4_ShoppingCart.php"> Shopping Cart </a>
         <a href="P5_Login.html"> Login </a>
         <a href="P6_SignUp.html"> Sign Up</a>
     </div>
@@ -35,7 +35,7 @@
 
         <div class="top-form">
 
-            <button type="submit" class="shop" onclick="location.href='/P2_Fruits.html'">Continue Shopping</button> 
+            <button type="submit" class="shop" onclick="location.href='/P2_Fruits.php'">Continue Shopping</button> 
             <!-- need to change links on project -->
 
         </div>
