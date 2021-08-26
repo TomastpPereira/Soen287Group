@@ -11,11 +11,13 @@ var element = document.getElementById("item");
 var itemName = element.innerText;
 
 
+
 // This is to keep count after refresh
 
 if(localStorage.getItem(itemName) == null) {
     count = 0;
     updateHtml();
+
 }
 else {
     count = parseInt(localStorage.getItem(itemName));
@@ -24,7 +26,7 @@ else {
 
 // Alert on add to cart button + adding product info to lcl sto
 addToCartBtn.addEventListener('click', function () {
-    alert("Item added to cart!");
+    
     const product = {
         item: document.getElementById("item").innerText,
         quantity: parseFloat(document.getElementById("qty").innerText),
@@ -36,12 +38,20 @@ addToCartBtn.addEventListener('click', function () {
     
     if(localStorage.getItem("data") == null){
         localStorage.setItem("data", "[]");
-    }
-
+    } 
+    
     var old_data = JSON.parse(localStorage.getItem("data"));
+    for(let x = 0; x < JSON.parse(localStorage.getItem("data")).length; x++){
+        let name = JSON.parse(localStorage.getItem("data"))[x].item;
+        if(name == product.item){
+            alert("Whoops, this item is already in your Cart.");
+            return;
+        }
+    }
     old_data.push(new_data);
 
     localStorage.setItem("data", JSON.stringify(old_data));
+     alert("Item added to cart!");
 
 });
 
@@ -73,7 +83,7 @@ remove.addEventListener('click', function () {
     }
 });
 
-// Update html to update the text and the count in local storage
+// Update html to update the text and the count in local storage 
 
 function updateHtml() {
     counterDiv.innerHTML = count;

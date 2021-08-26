@@ -24,21 +24,24 @@ var addButton = document.getElementsByClassName("add");
  function addQuantity(event){
      let buttonAdd = event.target;
      let quantity = buttonAdd.parentElement.parentElement.getElementsByClassName("qty")[0].value;
+     let getAltADD = buttonAdd.parentElement.parentElement.parentElement.getElementsByClassName("images")[0].getAttribute("alt");
      quantity++;
-     buttonAdd.parentElement.parentElement.getElementsByClassName("qty")[0].value = quantity;
+     localStorage.setItem(getAltADD,quantity);
+     buttonAdd.parentElement.parentElement.getElementsByClassName("qty")[0].value = localStorage.getItem(getAltADD);
      updateCartTotal();
  }
 
  function removeQuantity(event){
      let buttonLess = event.target;
      let quantity = buttonLess.parentElement.parentElement.getElementsByClassName("qty")[0].value;
+     let getAltRemove = buttonLess.parentElement.parentElement.parentElement.getElementsByClassName("images")[0].getAttribute("alt");
      if (quantity == 1) return;
      quantity--;
-     buttonLess.parentElement.parentElement.getElementsByClassName("qty")[0].value = quantity;
+     localStorage.setItem(getAltRemove, quantity);
+     buttonLess.parentElement.parentElement.getElementsByClassName("qty")[0].value = localStorage.getItem(getAltRemove);
      updateCartTotal();    
  }
 
- console.log(JSON.parse(localStorage.getItem("data")))
  function removeCartItems(event){
      let buttonClicked = event.target;
      buttonClicked.parentElement.parentElement.parentElement.remove();
@@ -100,7 +103,7 @@ var addButton = document.getElementsByClassName("add");
 
                 <h2 class="price-heading">Price: <input type="text" readonly="readonly" value="0" class="price-in"> </h2>
                 <h2 class="price-heading">$/each: <input type="text" readonly="readonly" value="${(price/quantity).toFixed(2)}" class="price-each"></h2>
-                <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="${quantity}" class="qty"></h2>
+                <h2 class="price-heading">Qty: <input type="text" readonly="readonly" value="${localStorage.getItem(name)}" class="qty"></h2>
 
                 <button class="add"><strong>+ Add</strong></button>
                 <button class="remove"><strong>- Less</strong></button>
@@ -119,3 +122,41 @@ var addButton = document.getElementsByClassName("add");
         updateCartTotal();
         
     }
+
+    function getLocalStorage(){
+        if(localStorage.getItem("data") === null){return;}
+        let cookieCount = 0;
+        let cartItems = document.getElementsByClassName("outer-rec")[0];
+        let cartRows = cartItems.getElementsByClassName("row");
+        if(cartRows.length == 0){
+            alert("Whoops, the cart is empty");
+            return;
+        }
+        for (let x = 0; x < JSON.parse(localStorage.getItem("data")).length; x++){
+        let currentRow = cartRows[x];
+        let name = JSON.parse(localStorage.getItem("data"))[x].item;
+        let quantity = currentRow.getElementsByClassName("qty")[0].value;
+        createCookie(x, name+","+quantity, 1);
+        cookieCount++;
+    
+        }
+        createCookie('cookieCount', cookieCount,1);
+        alert("Your purchase was recorded successfully! Thank you for your purchase.");    
+        localStorage.clear();
+        location.reload();
+    }
+
+    function createCookie(name, value, days) {
+    var expires;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    else {
+        expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+
