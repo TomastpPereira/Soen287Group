@@ -128,8 +128,15 @@ if(isset($_POST['add'])){
 	<!-- nav bar -->
     <?php include('admin_Navbar.php'); ?>
 <!-- main item -->
-	<h1><strong>Edit Profile</strong></h1>
+	<?php 
+	if(isset($_GET['ID'])){
+	echo '<h1><strong>Edit Profile</strong></h1>';} else if(!isset($_GET['ID'])){ echo '<h1><strong>Add New User</strong></h1>';} 
+	?>
 	<div class="edit-profile-box">
+
+	<?php 
+	if(isset($_GET['ID'])){
+		echo '
 		<form action="" method="POST"> <!-- edit info -->	
 			<br>
 			<h2>Account Information</h2>
@@ -137,20 +144,24 @@ if(isset($_POST['add'])){
 				<div class="flexbox-container-name">
 					<div class="flexbox fname">
 						<label>First name</label>
-						<input type="name" value= "<?php echo $firstname ?? ""; ?>" placeholder= "John" name="firstname" required>
+						<input type="name" value= "'; ?> <?php echo $firstname ?? ""; ?>" <?php echo' placeholder= "John" name="firstname" required>
 					</div>
 					<div class="flexbox lname">
 						<label>Last name</label>
-						<input type="name" value= "<?php echo $lastname ?? ""; ?>" placeholder= "Doe" name="lastname" required>
+						<input type="name" value= "'; ?> <?php echo $lastname ?? ""; ?>" <?php echo'placeholder= "Doe" name="lastname" required>
 					</div>	
 					<div class="flexbox email">
 						<label>Email</label>
-						<input type="email" value= "<?php echo $email ?? ""; ?>" placeholder="email" name="email" required>
+						<input type="email" value= "'; ?> <?php echo $email ?? ""; ?>" <?php echo'placeholder="email" name="email" required>
 					</div>
 				</div>
 				<button type="Save" name="save" class="save-button" value="Save">Save</button>
 			</div>	
-		</form> <!-- password-change-box -->	
+		</form>'; // password change box
+	 
+	?>
+		<?php 
+		echo '
 		<h2>Change Password</h2>
 		<form action="" method="POST">
 			<div class="flexbox-container-name">
@@ -167,37 +178,47 @@ if(isset($_POST['add'])){
 					<label for="password">Confirm password</label>
 					<input type="password" placeholder= "*******" name="c_password" required>
 				</div>	
-				<br>
+				<br>'; ?>
 				<?php
 				if($error){
 					echo '<p>Passwords do not match </p>';
 				}
 				?>
-			</div>
+			<?php	
+			echo '</div>
 			<br>
 				<button type="Submit" name="change" class="change-button" value="Change Password">Change Password</button>
 		</form>
-		</form> <!-- password-change-box -->	
-		<h2>Add New User</h2>
-		<form action="" method="POST">
-			<div class="flexbox-container-name">
-				<div class="flexbox fname">
-					<label>First name</label>
-					<input type="text" placeholder= John name="create_firstname" required>
-					<labe>Last name</label>
-					<input type="text" placeholder= Doe name="create_lastname" required>
+		</form>';
+			}
+			?>
+
+
+		<?php if(!isset($_GET['ID'])){
+			echo '
+			<h2>New User Information</h2>
+			<form action="" method="POST">
+				<div class="flexbox-container-name">
+					<div class="flexbox fname">
+						<label>First name</label>
+						<input type="text" placeholder= John name="create_firstname" required>
+						<labe>Last name</label>
+						<input type="text" placeholder= Doe name="create_lastname" required>
+					</div>	
+					<br>
+					<div class="flexbox fname">
+						<label>email</label>
+						<input type="email" placeholder= "john@example.com" name="create_email" required>
+						<label>Confirm password</label>
+						<input type="password" placeholder= "*******" name="create_password" required>
+					</div>	
+					<br>
 				</div>	
-				<br>
-				<div class="flexbox fname">
-					<label>email</label>
-					<input type="email" placeholder= "john@example.com" name="create_email" required>
-					<label>Confirm password</label>
-					<input type="password" placeholder= "*******" name="create_password" required>
-				</div>	
-				<br>
-			</div>	
-				<button type="Submit" name="add" class="change-button" value="Add user">Add user</button>
-		</form>
+					<button type="Submit" name="add" class="change-button" value="Add user">Add user</button>
+			</form>';
+		}	
+		?>
+		
 	</div>
 
 	<!-- footer -->

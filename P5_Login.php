@@ -62,7 +62,7 @@ if (isset($_POST['login'])){
 		      		<input type="checkbox" checked="checked" name="remember"> Remember me
 			    <p><a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Forgot Password? </a></p>
 			    <br style="line-height: 20px;">
-			    <p> New to Tomas' and friends? <a href= "P6_SignUp.html">Sign up now</a></p>  <!-- sign up page link -->
+			    <p> New to Tomas' and friends? <a href= "P6_SignUp.php">Sign up now</a></p>  <!-- sign up page link -->
 			</form>
 	</div>
 <!-- footer -->

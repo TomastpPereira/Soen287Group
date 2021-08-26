@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <main>
-<amount>3</amount>
+<amount>5</amount>
   <userlist>
    <user>
         <ID>0</ID>
@@ -10,12 +10,12 @@
         <lastname>Account</lastname> 
         <isadmin>true</isadmin>
     </user>
-    <user>  
-        <ID>1</ID>
-        <password>4a7d1ed414474e4033ac29ccb8653d9b</password>
+    <user>
         <email>trudeaujr@LPC.com</email>
+        <password>098f6bcd4621d373cade4e832627b4f6</password>
         <firstname>Justin</firstname>
         <lastname>Trudeau</lastname>
+        <ID>2</ID>
         <isadmin>false</isadmin>
     </user>
     <user>
@@ -26,7 +26,7 @@
         <lastname>Roger</lastname>
         <isadmin>fasle</isadmin>
     </user>
-  </userlist>
+ <user><email>test@example.com</email><password>202cb962ac59075b964b07152d234b70</password><firstname>test</firstname><lastname>testy</lastname><ID>6</ID><isadmin>false</isadmin></user><user><email>blah@blah.com</email><password>c4ca4238a0b923820dcc509a6f75849b</password><firstname>blah</firstname><lastname>blah</lastname><ID>7</ID><isadmin>false</isadmin></user></userlist> 
 
 <!-- </userlist> if deleted during testing--> 
 </main>
