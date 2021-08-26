@@ -27,12 +27,10 @@ if(isset($_POST['save'])){// user pressed save
   $firstname = $_POST['firstname'];
   $lastname = $_POST['lastname'];
   $email = $_POST['email'];
-  $password = $_POST['password'];
 
   $user->firstname = $_POST['firstname'];
   $user->lastname = $_POST['lastname'];
   $user->email = $_POST['email'];
-  $user->password = $_POST['password'];
 
   $xml->asXML("users/test.xml");//Saving to XML file
 
@@ -122,7 +120,7 @@ if(isset($_POST['add'])){
 <head>
 	<meta charset="utf-8">
 	<title>Edit User Profile</title>
-	<link rel = "stylesheet type" type = "text/css" href= "Edit_User_Profile_Test.css" >
+	<link rel = "stylesheet type" type = "text/css" href= "P10_Edit_User_New.css" >
 </head>
 <body>
 	<!-- nav bar -->
@@ -142,19 +140,20 @@ if(isset($_POST['add'])){
 			<h2>Account Information</h2>
 			<div class="flexbox-container-main">
 				<div class="flexbox-container-name">
-					<div class="flexbox fname">
+					<div class="flexbox-name ">
 						<label>First name</label>
 						<input type="name" value= "'; ?> <?php echo $firstname ?? ""; ?>" <?php echo' placeholder= "John" name="firstname" required>
 					</div>
-					<div class="flexbox lname">
+					<div class="flexbox-name ">
 						<label>Last name</label>
 						<input type="name" value= "'; ?> <?php echo $lastname ?? ""; ?>" <?php echo'placeholder= "Doe" name="lastname" required>
 					</div>	
-					<div class="flexbox email">
+				</div>
+				<br>
+					<div class="flexbox-name">
 						<label>Email</label>
 						<input type="email" value= "'; ?> <?php echo $email ?? ""; ?>" <?php echo'placeholder="email" name="email" required>
 					</div>
-				</div>
 				<button type="Save" name="save" class="save-button" value="Save">Save</button>
 			</div>	
 		</form>'; // password change box
@@ -164,17 +163,17 @@ if(isset($_POST['add'])){
 		echo '
 		<h2>Change Password</h2>
 		<form action="" method="POST">
-			<div class="flexbox-container-name">
-				<div class="flexbox fname">
+		<div class="main">
+			<div class="flexbox-container-password">
+				<div class="flexbox-name">
 					<label for="password">Old password</label>
 					<input type="password" placeholder= "*******" name="oldpassword" required>
 				</div>
-				<div class="flexbox fname">
+				<div class="flexbox-name">
 					<label for="password">New password</label>
 					<input type="password" placeholder= "*******" name="newpassword" required>
 				</div>	
-				<br>
-				<div class="flexbox fname">
+				<div class="flexbox-name">
 					<label for="password">Confirm password</label>
 					<input type="password" placeholder= "*******" name="c_password" required>
 				</div>	
@@ -184,37 +183,45 @@ if(isset($_POST['add'])){
 					echo '<p>Passwords do not match </p>';
 				}
 				?>
-			<?php	
-			echo '</div>
-			<br>
-				<button type="Submit" name="change" class="change-button" value="Change Password">Change Password</button>
-		</form>
+				<?php	
+			echo '
+			<button type="Submit" name="change" class="change-button" value="Change Password">Change Password</button>
+			</div>
+		</div>
 		</form>';
 			}
 			?>
-
 
 		<?php if(!isset($_GET['ID'])){
 			echo '
 			<h2>New User Information</h2>
 			<form action="" method="POST">
-				<div class="flexbox-container-name">
-					<div class="flexbox fname">
-						<label>First name</label>
-						<input type="text" placeholder= John name="create_firstname" required>
-						<labe>Last name</label>
-						<input type="text" placeholder= Doe name="create_lastname" required>
-					</div>	
-					<br>
-					<div class="flexbox fname">
+			<div class="main">
+				<div class="flexbox-container-password">
+						<div class="flexbox-name">
+							<label>First name</label>
+							<input type="text" placeholder= John name="create_firstname" required>
+						</div>
+						<br>
+						<div class="flexbox-name">
+							<label>Last name</label>
+							<input type="text" placeholder= Doe name="create_lastname" required>
+						</div>	
+						<br>
+					<div class="flexbox-name">
 						<label>email</label>
 						<input type="email" placeholder= "john@example.com" name="create_email" required>
+					</div>
+					<br>
+					<div class="flexbox-name">
 						<label>Confirm password</label>
 						<input type="password" placeholder= "*******" name="create_password" required>
 					</div>	
 					<br>
-				</div>	
+				
 					<button type="Submit" name="add" class="change-button" value="Add user">Add user</button>
+					</div>	
+					</div>
 			</form>';
 		}	
 		?>

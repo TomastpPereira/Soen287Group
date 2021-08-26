@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <main>
-<amount>5</amount>
+<amount>3</amount>
   <userlist>
    <user>
         <ID>0</ID>
-        <password>21232f297a57a5a743894a0e4a801fc3</password>
+        <password>21232f297a57a5a743894a0e4a801fc3</password> <!-- admin -->
         <email>admin@admin.com</email>
         <firstname>Admin</firstname>
         <lastname>Account</lastname> 
@@ -12,7 +12,7 @@
     </user>
     <user>
         <email>trudeaujr@LPC.com</email>
-        <password>098f6bcd4621d373cade4e832627b4f6</password>
+        <password>098f6bcd4621d373cade4e832627b4f6</password> <!-- test -->
         <firstname>Justin</firstname>
         <lastname>Trudeau</lastname>
         <ID>2</ID>
@@ -20,13 +20,13 @@
     </user>
     <user>
         <ID>5</ID>
-        <password>202cb962ac59075b964b07152d234b70</password>
+        <password>202cb962ac59075b964b07152d234b70</password> <!-- 123 -->
         <email>test@test.com</email>
         <firstname>Joe</firstname>
         <lastname>Roger</lastname>
         <isadmin>fasle</isadmin>
     </user>
- <user><email>test@example.com</email><password>202cb962ac59075b964b07152d234b70</password><firstname>test</firstname><lastname>testy</lastname><ID>6</ID><isadmin>false</isadmin></user><user><email>blah@blah.com</email><password>c4ca4238a0b923820dcc509a6f75849b</password><firstname>blah</firstname><lastname>blah</lastname><ID>7</ID><isadmin>false</isadmin></user></userlist> 
+ </userlist> 
 
 <!-- </userlist> if deleted during testing--> 
 </main>

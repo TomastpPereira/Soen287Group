@@ -49,7 +49,7 @@
             <div class="inner-buttons">
             <form action="P10_Edit_User_New.php" method="GET">
                 <input type="hidden" name="ID" value="<?= $ID ?>" >
-                <button class="edit-order" type="submit" ><strong>Edit User</strong></button>
+                <button class="edit-user" type="submit" ><strong>Edit User</strong></button>
             </form>
                 <div class ="cart-buttons" class="add-delete">
                     <form action="delete_User.php" method="GET">
@@ -62,29 +62,4 @@
 
     </div><br>
             <?php } ?>
-
-
-</div>
-
-<div class="footer">
-    <p style="text-align: center;"> Our Info </p>
-    <p style="padding-left: 20px;"> We are dedicated to providing only the best service to our valued customers. </p>
-    <p style="padding-left: 20px;"> Address: 123 Filler Street, H2K 4W9 </p>
-</div>
-</body>
-
-<!-- <script>
-
-    // var deleteBtn = document.getElementById("delete-orderBtn");
-    // var addBtn = document.getElementById("add-order");
-
-    // addBtn.addEventListener('click', function() {
-    //     alert("Adding new order...");
-    // });
-
-    // deleteBtn.addEventListener('click', function() {
-    //     alert("Order deleted!")
-    // });
-
-</script> -->
 </html>
