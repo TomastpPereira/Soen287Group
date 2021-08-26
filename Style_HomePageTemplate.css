@@ -173,6 +173,19 @@ body{
       width:75px;
   }
 
+#productInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#picture{
+    width: 40%;
+    height:50%
+}
+#productDescription{
+    width: 60%;
+}
 
 
 
@@ -198,6 +211,17 @@ body{
     }
     .footer{
         visibility: hidden;
+    }
+    #productInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #picture{
+        width: 70%;
+    }
+    #productDescription{
+        width: 70%;
     }
 }
 

@@ -33,7 +33,7 @@
                 <label for="PImg"> Image Link <br>('amp;' must be placed after any '&')</label>
                 <input type="text" id="PImg" name="PImg" value=""><br><br> 
                 <label for="PId"> Product ID </label>
-                <input type="text" id="PId" name="PId" value="" disabled><br><br> <hr style="width:111%"> <br>
+                <input type="text" id="PId" name="PId" value="" readonly><br><br> <hr style="width:111%"> <br>
                 <input type="submit" style="width:112%" value="Save" name="Save"> <br><br>
                 <input type="submit" style="width:112%" value="Add a New Product" name="Add"> <br><br>
                 <!-- <input type="button" style="width:112%" value="Delete This Product"> <br><br> -->

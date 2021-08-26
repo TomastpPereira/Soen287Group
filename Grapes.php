@@ -90,7 +90,9 @@
 
 </body>
 
-<script> var price = 1.79;</script>
+<script> var priceFromXML = document.getElementById("unit_Cost").innerHTML;
+    var thenum = priceFromXML.replace( /^\D+/g, '');
+    var price = parseFloat(thenum);</script>
 <script type="text/javascript" src="Button_Scripting.js"></script>
 
 </html>
