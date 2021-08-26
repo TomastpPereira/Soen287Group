@@ -14,15 +14,13 @@ if($_POST["Save"]) {
     $productId = $_POST['PId'];
     $productIdInt = intval($productId);
 
-
-
-    $products->product->name[$productIdInt] = $productName;
-    $products->product->price[$productIdInt] = $productCost;
-    $products->product->weight[$productIdInt] = $productWeight;
-    $products->product->calories[$productIdInt] = $productCalo;
-    $products->product->aisle[$productIdInt] = $productAisle;
-    $products->product->description[$productIdInt] = $productDesc;
-    $products->product->image[$productIdInt] = $productImg;
+    $products->product[$productIdInt]->name = $productName;
+    $products->product[$productIdInt]->price = $productCost;
+    $products->product[$productIdInt]->weight = $productWeight;
+    $products->product[$productIdInt]->calories = $productCalo;
+    $products->product[$productIdInt]->aisle = $productAisle;
+    $products->product[$productIdInt]->description = $productDesc;
+    $products->product[$productIdInt]->image = $productImg;
 
     $products->asXML("product_data.xml");
     echo "<script>window.location = 'P7_list_of_products.php'</script>";
