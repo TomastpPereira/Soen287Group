@@ -1,5 +1,3 @@
-<?php include('admin_Check.php'); ?>
-
 <?php
 session_start(); //Starting the session
 $xml = simplexml_load_file("users/test.xml");
@@ -44,7 +42,7 @@ if(isset($_POST['save'])){// user pressed save
   setcookie("lastname", $lastname, time() + 86400, "/");
   setcookie("email", $email, time() + 86400, "/");
   setcookie("password", $password, time() + 86400, "/");
-    // header("Location: ../../index.php");
+  header("Location: ../../index.php");
     }
     else{
   header("Location: P9_Edit_User_List.php");
@@ -135,7 +133,6 @@ if(isset($_POST['add'])){
 		<form action="" method="POST"> <!-- edit info -->	
 			<br>
 			<h2>Account Information</h2>
-			<!-- <h6>Confirm the changes by entering your password</h6> -->
 			<div class="flexbox-container-main">
 				<div class="flexbox-container-name">
 					<div class="flexbox fname">

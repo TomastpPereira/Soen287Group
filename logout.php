@@ -1,5 +1,6 @@
 <?php
 session_start();
+setcookie("ID", "", time() - 86400, "/");
 setcookie("firstname", "", time() -86400, "/");
 setcookie("lastname", "", time() - 86400, "/");
 setcookie("email", "", time() + 86400, "/");

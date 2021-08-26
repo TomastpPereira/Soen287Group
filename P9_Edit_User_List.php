@@ -1,6 +1,3 @@
-<?php include('admin_Check.php'); ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

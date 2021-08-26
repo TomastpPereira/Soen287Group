@@ -8,10 +8,6 @@ if(isset($_POST['sign_up'])){
     $password = $_POST['password'];
     $c_password = $_POST['c_password'];
 
-    // if(file_exists('users/' . $email . '.xml')){
-    //     $errors[] = 'Account already exists';
-    // }
-    // No check if the user already exist *to implement*
     if ($firstname == ''){
       $errors[] = 'First Name is blank';
     }
@@ -48,24 +44,10 @@ if(isset($_POST['sign_up'])){
       header('Location: P5_Login.php');
       die;
     }
-
-    // Old code for seperate XML files (as it should be).
-    // if (count($errors) == 0){
-    //     $xml = new SimpleXMLElement('<user></user>');
-    //     $xml->addChild('password', md5($password));
-    //     $xml->addChild('email', $email);
-    //     $xml->addChild('firstname', $firstname);
-    //     $xml->addChild('lastname', $lastname);
-    //     $xml->asXML('users/' . $email . '.xml');
-    //     header('Location: P5_Login.php');
-    //     die;
-    // }
 }
 ?>
 
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <title> Sign Up Page </title>
@@ -73,7 +55,7 @@ if(isset($_POST['sign_up'])){
 </head>
 
 <body>
-<?php include('navbar.php'); ?>
+<?php include('navbar.php'); ?> <!-- navbar --> 
 
 <?php
   if(count($errors) > 0){
@@ -84,7 +66,6 @@ if(isset($_POST['sign_up'])){
       echo '</ul>';
   }
 ?>
-
 
 <div class="sign-up-box" >
   <div class="top-text-div">
@@ -143,7 +124,7 @@ if(isset($_POST['sign_up'])){
         <input type="password" id="confirm-password" placeholder="Confirm Password" onkeyup='checkPassword()' name="c_password" required> <br><br>
       </div>
     </div>
-    <a href="#"><h5> Terms & Conditions</h5></a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><h5> Terms & Conditions</h5></a>
       <input type = checkbox id="checkbox" required> Agree to Terms & Conditions 
       <br>
       <br>
