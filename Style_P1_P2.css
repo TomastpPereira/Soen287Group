@@ -195,7 +195,8 @@ img {
 /* Styling when Different Sized Screen */  
 @media screen and (max-width:1200px) {
     .aisle-content{
-        width: 70%;
+        width: 30%;
+        min-height: 500px;
         margin-top: 20px;
     }
     .aisle-content img {
@@ -203,9 +204,22 @@ img {
         height: 85%;
     }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:750px) {
+    .aisle-content{
+        width: 45%;
+        min-height: 500px;
+        margin-top: 20px;
+    }
+    .aisle-content img {
+        width:  100%;
+        height: 85%;
+    }
+}
+@media screen and (max-width:500px) {
     .aisle-content{
         width: 90%;
+        min-width: 230px;
+        min-height: 400px;
         margin-top: 20px;
     }
     .aisle-content img {
