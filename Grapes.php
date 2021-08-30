@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title> Banana </title>
+    <title> Grapes </title>
     <link rel="stylesheet type" type="text/css" href="Style_HomePageTemplate.css">
 
     <link rel="stylesheet" type="text/css" href="JS_Styling.css">
