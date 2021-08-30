@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title> Fruits and Vegetables </title>
+    <title> Fruits </title>
      <link rel="stylesheet" type="text/css" href="Style_P1_P2.css">
 </head>
 
@@ -11,8 +11,8 @@
 
 
 <div class="container" id="banner">
-    <h1> Fruits & Vegetables </h1>
-    <h4> Aisle 1 </h4>
+    <h1> Fruits </h1>
+    <h4> Get your fresh fruits here! </h4>
 </div>
 
 <div class="aisle-box">
